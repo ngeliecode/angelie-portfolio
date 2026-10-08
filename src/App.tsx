@@ -4,12 +4,21 @@ import About from './sections/About'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Nav from './components/Nav'
+import { useState } from 'react'
 
 const App = () => {
+  const [darkMode, setDarkMode] = useState(false)
+
+  const toggleTheme = () => {
+    const toggled = !darkMode
+
+    setDarkMode(toggled)
+    document.body.classList.toggle('dark', toggled)
+  }
+
   return (
     <>
-      <Nav />
-
+      <Nav darkMode={darkMode} toggleTheme={toggleTheme} />
       <main>
         <Intro />
         <Home />
