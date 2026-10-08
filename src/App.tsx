@@ -1,8 +1,18 @@
+import Intro from './sections/Intro'
+import Home from './sections/Home'
+import About from './sections/About'
+import Projects from './sections/Projects'
+import Contact from './sections/Contact'
+
 const App = () => {
   return (
-    <h1 className="text-5xl text-purple-500 font-bold underline">
-      Hello Tailwind!
-    </h1>
+    <>
+      <Intro />
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+    </>
   )
 }
 
