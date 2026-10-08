@@ -7,18 +7,16 @@ import Nav from './components/Nav'
 import { useState } from 'react'
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false)
+  const [theme, setTheme] = useState('light')
 
   const toggleTheme = () => {
-    const toggled = !darkMode
-
-    setDarkMode(toggled)
-    document.body.classList.toggle('dark', toggled)
+    setTheme(theme === 'light' ? 'dark' : 'light')
+    document.body.classList.toggle('dark', theme === 'light')
   }
 
   return (
     <>
-      <Nav darkMode={darkMode} toggleTheme={toggleTheme} />
+      <Nav theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Intro />
         <Home />

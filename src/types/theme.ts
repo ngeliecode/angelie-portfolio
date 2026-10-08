@@ -3,9 +3,6 @@
  */
 
 export type ThemeProps = {
-  // Value: true or false
-  darkMode: boolean
-
-  // Function: takes no arguments, returns nothing
-  toggleTheme: () => void
+  theme: string
+  toggleTheme: () => void // takes no arguments, returns nothing
 }

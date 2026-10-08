@@ -1,8 +1,10 @@
 import type { ThemeProps } from '../types/theme'
 
-const ThemeToggle = ({ darkMode, toggleTheme }: ThemeProps) => {
+const ThemeToggle = ({ theme, toggleTheme }: ThemeProps) => {
   return (
-    <button onClick={toggleTheme}>{darkMode ? 'Light' : 'Dark'} theme</button>
+    <button onClick={toggleTheme}>
+      {theme === 'light' ? 'Dark' : 'Light'} theme
+    </button>
   )
 }
 
