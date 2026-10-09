@@ -1,9 +1,18 @@
 import ThemeToggle from './ThemeToggle'
-import type { ThemeProps } from '../types/theme'
+import LanguageToggle from './LanguageToggle'
 
-const Nav = ({ theme, toggleTheme }: ThemeProps) => {
+import type { ThemeProps } from '../types/theme'
+import type { LanguageProps } from '../types/language'
+
+const Nav = ({
+  theme,
+  toggleTheme,
+  language,
+  toggleLanguage,
+}: ThemeProps & LanguageProps) => {
   return (
     <nav className="sticky top-0">
+      <LanguageToggle language={language} toggleLanguage={toggleLanguage} />
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
     </nav>
   )

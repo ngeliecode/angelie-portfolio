@@ -8,17 +8,27 @@ import { useState } from 'react'
 
 const App = () => {
   const [theme, setTheme] = useState('light')
+  const [language, setLanguage] = useState('en')
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
     document.body.classList.toggle('dark', theme === 'light')
   }
 
+  const toggleLanguage = () => {
+    setLanguage(language === 'sv' ? 'en' : 'sv')
+  }
+
   return (
     <>
-      <Nav theme={theme} toggleTheme={toggleTheme} />
+      <Nav
+        theme={theme}
+        toggleTheme={toggleTheme}
+        language={language}
+        toggleLanguage={toggleLanguage}
+      />
       <main>
-        <Intro />
+        <Intro language={language} />
         <Home />
         <About />
         <Projects />
