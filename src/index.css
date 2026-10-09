@@ -3,6 +3,8 @@
 :root {
   --color-background: #f5f5f5;
   --color-text: #1a1a1a;
+  --font-heading: 'Fraunces', serif;
+  --font-text: 'Roboto Mono', monospace;
 }
 
 .dark {
@@ -13,4 +15,9 @@
 body {
   background-color: var(--color-background);
   color: var(--color-text);
+  font-family: var(--font-text);
+}
+
+h1 {
+  font-family: var(--font-heading);
 }
