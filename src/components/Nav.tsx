@@ -11,7 +11,7 @@ const Nav = ({
   toggleLanguage,
 }: ThemeProps & LanguageProps) => {
   return (
-    <nav className="sticky top-0 bg-[var(--color-background)]">
+    <nav className="sticky top-0 px-6 py-4 bg-[var(--color-background)]">
       <LanguageToggle language={language} toggleLanguage={toggleLanguage} />
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
     </nav>
