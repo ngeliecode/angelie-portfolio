@@ -7,12 +7,14 @@ import Nav from './components/Nav'
 import { useState, useEffect } from 'react'
 
 const App = () => {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light') // Use saved value
   const [language, setLanguage] = useState('en')
 
-  // Effect of state change
   useEffect(() => {
     document.body.classList.toggle('dark', theme === 'dark')
+
+    // Save value in browser
+    localStorage.setItem('theme', theme)
   }, [theme])
 
   const toggleTheme = () => {
