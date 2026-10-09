@@ -4,6 +4,8 @@ import LanguageToggle from './LanguageToggle'
 import type { ThemeProps } from '../types/theme'
 import type { LanguageProps } from '../types/language'
 
+import './Nav.css'
+
 const Nav = ({
   theme,
   toggleTheme,
@@ -11,7 +13,7 @@ const Nav = ({
   toggleLanguage,
 }: ThemeProps & LanguageProps) => {
   return (
-    <nav className="sticky top-0 px-6 py-4 bg-[var(--color-background)]">
+    <nav className="navbar">
       <LanguageToggle language={language} toggleLanguage={toggleLanguage} />
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
     </nav>
