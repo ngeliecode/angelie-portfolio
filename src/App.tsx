@@ -7,22 +7,24 @@ import Nav from './components/Nav'
 import { useState, useEffect } from 'react'
 
 const App = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light') // Use saved value
-  const [language, setLanguage] = useState('en')
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
+  const [lang, setLang] = useState(localStorage.getItem('language') || 'en')
 
   useEffect(() => {
     document.body.classList.toggle('dark', theme === 'dark')
-
-    // Save value in browser
     localStorage.setItem('theme', theme)
   }, [theme])
+
+  useEffect(() => {
+    localStorage.setItem('language', lang)
+  }, [lang])
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
   const toggleLanguage = () => {
-    setLanguage(language === 'sv' ? 'en' : 'sv')
+    setLang(lang === 'sv' ? 'en' : 'sv')
   }
 
   return (
@@ -30,11 +32,11 @@ const App = () => {
       <Nav
         theme={theme}
         toggleTheme={toggleTheme}
-        language={language}
+        language={lang}
         toggleLanguage={toggleLanguage}
       />
       <main>
-        <Intro language={language} />
+        <Intro language={lang} />
         <Home />
         <About />
         <Projects />
