@@ -1,5 +1,4 @@
 import { translations } from '../../data/translations'
-import Arrow from '../../components/Arrow/Arrow'
 import './Intro.css'
 
 type IntroProps = {
@@ -12,15 +11,12 @@ const Intro = ({ language }: IntroProps) => {
   return (
     <section className="intro">
       <div className="h-screen">
-        <h1>{text.welcome}</h1>
-
-        <div>
-          <p className="uppercase">{text.scroll}</p>
-          <Arrow />
-        </div>
+        <h1 className="fade-in-out">{text.welcome}</h1>
       </div>
 
-      <div className="h-screen">Second intro page</div>
+      <div className="h-screen">
+        <h1>Second Intro page</h1>
+      </div>
     </section>
   )
 }
