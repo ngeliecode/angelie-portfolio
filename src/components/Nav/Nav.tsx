@@ -1,8 +1,8 @@
-import ThemeToggle from './ThemeToggle'
-import LanguageToggle from './LanguageToggle'
+import ThemeToggle from '../ThemeToggle'
+import LanguageToggle from '../LanguageToggle'
 
-import type { ThemeProps } from '../types/theme'
-import type { LanguageProps } from '../types/language'
+import type { ThemeProps } from '../../types/theme'
+import type { LanguageProps } from '../../types/language'
 
 import './Nav.css'
 

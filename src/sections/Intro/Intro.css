@@ -1,0 +1,28 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro > :first-child {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.intro > :first-child > :first-child {
+  align-self: end;
+}
+
+.intro h1 {
+  min-width: 26rem;
+  max-width: 26rem;
+}
+
+.eng .intro h1 {
+  min-width: 16rem;
+  max-width: 16rem;
+}
+
+.intro > :first-child p {
+  position: relative;
+  top: 8rem;
+}

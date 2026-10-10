@@ -1,9 +1,9 @@
-import Intro from './sections/Intro'
-import Home from './sections/Home'
-import About from './sections/About'
-import Projects from './sections/Projects'
-import Contact from './sections/Contact'
-import Nav from './components/Nav'
+import Intro from './sections/Intro/Intro'
+import Home from './sections/Home/Home'
+import About from './sections/About/About'
+import Projects from './sections/Projects/Projects'
+import Contact from './sections/Contact/Contact'
+import Nav from './components/Nav/Nav'
 import { useState, useEffect } from 'react'
 
 const App = () => {
@@ -16,6 +16,7 @@ const App = () => {
   }, [theme])
 
   useEffect(() => {
+    document.body.classList.toggle('eng', lang === 'en')
     localStorage.setItem('language', lang)
   }, [lang])
 
