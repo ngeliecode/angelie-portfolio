@@ -18,3 +18,37 @@
   min-width: 16rem;
   max-width: 16rem;
 }
+
+.scroll-indicator {
+  width: 1.5rem;
+  height: 3rem;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  padding-block: 0.3rem;
+
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.scroll-indicator-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Animation */
+.scroll-indicator-dot {
+  animation: scrollDown 1s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(1.4rem);
+  }
+}

@@ -26,7 +26,12 @@ const Intro = ({ language }: IntroProps) => {
           </h1>
         ) : (
           // State is now FALSE, so show this ⬇
-          <div className="scroll-indicator fade-in">Test</div>
+          <div className="fade-in flex flex-col justify-between h-[90px]">
+            <p className="uppercase text-[15px] font-medium">{text.scroll}</p>
+            <div className="scroll-indicator">
+              <div className="scroll-indicator-dot"></div>
+            </div>
+          </div>
         )}
       </div>
 
