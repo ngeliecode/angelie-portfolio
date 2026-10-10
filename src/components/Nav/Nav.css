@@ -8,11 +8,11 @@
   align-items: center;
   gap: 1.5rem;
 
-  padding: 1rem 1.5rem;
+  padding: 1rem;
 
   background-color: var(--color-background);
 }
 
-.navbar > :nth-child(2) {
+.navbar > :nth-child(1) {
   margin-left: auto;
 }
