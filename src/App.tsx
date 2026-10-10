@@ -8,36 +8,21 @@ import { useState, useEffect } from 'react'
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
-  const [lang, setLang] = useState(localStorage.getItem('language') || 'en')
 
   useEffect(() => {
     document.body.classList.toggle('dark', theme === 'dark')
     localStorage.setItem('theme', theme)
   }, [theme])
 
-  useEffect(() => {
-    document.body.classList.toggle('eng', lang === 'en')
-    localStorage.setItem('language', lang)
-  }, [lang])
-
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
-  const toggleLanguage = () => {
-    setLang(lang === 'sv' ? 'en' : 'sv')
-  }
-
   return (
     <>
-      <Nav
-        theme={theme}
-        toggleTheme={toggleTheme}
-        language={lang}
-        toggleLanguage={toggleLanguage}
-      />
+      <Nav theme={theme} toggleTheme={toggleTheme} />
       <main>
-        <Intro language={lang} />
+        <Intro />
         <Home />
         <About />
         <Projects />

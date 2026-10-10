@@ -1,11 +1,11 @@
 export const translations = {
   sv: {
-    welcome: 'Välkommen webbresenär, jag heter Angelie',
-    scroll: 'Skrolla ner',
+    partOne: 'Välkommen webbresenär, jag heter Angelie',
+    partTwo: 'Varsågod att utforska min portfolio',
   },
 
   en: {
-    welcome: 'Welcome web traveler, I’m Angelie',
-    scroll: 'Scroll down',
+    partOne: 'Welcome web traveler, I’m Angelie',
+    partTwo: 'Feel free to explore my portfolio',
   },
 }

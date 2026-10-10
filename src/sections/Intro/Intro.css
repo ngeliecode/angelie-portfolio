@@ -14,12 +14,12 @@
   grid-area: 1 / 1;
 }
 
-.eng .intro-text > :first-child {
+.intro-text > :first-child {
   min-width: 16rem;
   max-width: 16rem;
 }
 
-.intro-text > :first-child {
-  min-width: 26rem;
-  max-width: 26rem;
+.intro-text > :last-child {
+  min-width: 25rem;
+  max-width: 25rem;
 }
