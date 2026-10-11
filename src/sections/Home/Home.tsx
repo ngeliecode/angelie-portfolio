@@ -1,5 +1,23 @@
-const Home = () => {
-  return <section className="h-screen">Home</section>
+import Nav from '../../components/Nav/Nav'
+
+type HomeProps = {
+  showHomeBtn: () => void
+}
+
+const Home = ({ showHomeBtn }: HomeProps) => {
+  return (
+    <section id="home" className="gap-5 items-center text-center">
+      <h1 className="min-w-78 max-w-78 text-[48px]">
+        Welcome web traveler, I’m Angelie
+      </h1>
+
+      <p>Text</p>
+
+      <Nav showHomeBtn={showHomeBtn} />
+
+      <div>Socials</div>
+    </section>
+  )
 }
 
 export default Home

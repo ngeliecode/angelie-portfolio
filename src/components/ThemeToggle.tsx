@@ -1,13 +1,17 @@
-import type { ThemeProps } from '../types/theme'
 import { Moon, Sun } from 'lucide-react'
+
+export type ThemeProps = {
+  theme: string
+  toggleTheme: () => void
+}
 
 const ThemeToggle = ({ theme, toggleTheme }: ThemeProps) => {
   return (
-    <button type="button" onClick={toggleTheme}>
+    <button className="theme-toggle" type="button" onClick={toggleTheme}>
       {theme === 'light' ? (
-        <Moon size={36} strokeWidth={1.5} />
+        <Moon size={34} strokeWidth={1.5} />
       ) : (
-        <Sun size={36} strokeWidth={1.5} />
+        <Sun size={34} strokeWidth={1.5} />
       )}
     </button>
   )
