@@ -7,8 +7,10 @@ type HomeProps = {
 const Home = ({ showHomeBtn }: HomeProps) => {
   return (
     <section id="home" className="gap-5 items-center text-center">
-      <h1 className="min-w-78 max-w-78 text-[48px]">
-        Welcome web traveler, I’m Angelie
+      <h1>
+        Welcome
+        <br /> web traveler,
+        <br /> I’m Angelie
       </h1>
 
       <p>Text</p>
