@@ -1,0 +1,40 @@
+.home-menu {
+  width: 100%;
+  min-width: 150px;
+  max-width: 600px;
+
+  margin-bottom: 3rem;
+}
+
+.home-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home-menu a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.home-menu a::before {
+  content: '';
+  flex: 1;
+  height: 1em;
+  background-repeat: space no-repeat;
+  background-image: radial-gradient(circle, currentColor 20%, transparent 21%);
+  background-size: 0.6em 0.6em;
+  background-position: 0 70%;
+  order: 1;
+
+  transform: translateY(5px);
+}
+
+.home-menu a span:first-child {
+  order: 0;
+}
+
+.home-menu a span:last-child {
+  order: 2;
+}
