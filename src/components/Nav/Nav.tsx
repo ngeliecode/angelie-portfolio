@@ -1,27 +1,23 @@
 import './Nav.css'
 
-type NavProps = {
-  showHomeBtn: () => void
-}
-
-const Nav = ({ showHomeBtn }: NavProps) => {
+const Nav = () => {
   return (
     <nav className="home-menu flex flex-col gap-2 uppercase">
       <ul>
         <li>
-          <a href="#about" onClick={showHomeBtn}>
+          <a href="#about">
             <span>About me</span>
             <span>I</span>
           </a>
         </li>
         <li>
-          <a href="#projects" onClick={showHomeBtn}>
+          <a href="#projects">
             <span>Projects</span>
             <span>II</span>
           </a>
         </li>
         <li>
-          <a href="#contact" onClick={showHomeBtn}>
+          <a href="#contact">
             <span>Contact</span>
             <span>III</span>
           </a>

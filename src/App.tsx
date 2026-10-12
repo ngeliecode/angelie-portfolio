@@ -8,7 +8,9 @@ import HomeButton from './components/HomeButton'
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
-  const [isHidden, setIsHidden] = useState(true)
+  const [isHidden, setIsHidden] = useState(
+    window.location.hash === '' || window.location.hash === '#',
+  )
 
   useEffect(() => {
     document.body.classList.toggle('dark', theme === 'dark')
@@ -19,22 +21,26 @@ const App = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
-  function showHomeBtn() {
-    setIsHidden(false)
-  }
+  useEffect(() => {
+    const handleHashChange = () => {
+      setIsHidden(window.location.hash === '' || window.location.hash === '#')
+    }
 
-  function hideHomeBtn() {
-    setIsHidden(true)
-  }
+    window.addEventListener('hashchange', handleHashChange)
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange)
+    }
+  }, [])
 
   return (
     <>
       <nav className="navbar">
-        <HomeButton isHidden={isHidden} hideHomeBtn={hideHomeBtn} />
+        <HomeButton isHidden={isHidden} />
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       </nav>
 
-      <Home showHomeBtn={showHomeBtn} />
+      <Home />
 
       <main>
         <About />

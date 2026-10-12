@@ -1,10 +1,6 @@
 import Nav from '../../components/Nav/Nav'
 
-type HomeProps = {
-  showHomeBtn: () => void
-}
-
-const Home = ({ showHomeBtn }: HomeProps) => {
+const Home = () => {
   return (
     <section id="home" className="gap-5 items-center text-center">
       <h1>
@@ -15,7 +11,7 @@ const Home = ({ showHomeBtn }: HomeProps) => {
 
       <p>Text</p>
 
-      <Nav showHomeBtn={showHomeBtn} />
+      <Nav />
 
       <div>Socials</div>
     </section>
