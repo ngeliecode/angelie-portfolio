@@ -16,3 +16,11 @@
   width: 91.5%;
   height: 62.5%;
 }
+
+.swipe {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  font-size: 3rem;
+}
