@@ -27,7 +27,7 @@ const Nav = ({ showHomeBtn }: NavProps) => {
           </a>
         </li>
         <li>
-          <a href="#" onClick={showHomeBtn}>
+          <a href="#">
             <span>Resume PDF</span>
             <span>IV</span>
           </a>

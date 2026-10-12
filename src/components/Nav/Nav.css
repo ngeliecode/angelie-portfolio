@@ -1,21 +1,31 @@
 .home-menu {
   width: 100%;
   min-width: 150px;
-  max-width: 600px;
+  max-width: 460px;
 
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .home-menu ul {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 .home-menu a {
   display: flex;
   align-items: baseline;
   gap: 0.3rem;
+
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.home-menu a:hover,
+.home-menu a:focus {
+  transform: translateY(-3px);
 }
 
 .home-menu a::before {
