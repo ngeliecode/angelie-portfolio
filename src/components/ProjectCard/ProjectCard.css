@@ -1,0 +1,45 @@
+article,
+.computer {
+  width: 100%;
+  max-width: 470px;
+}
+
+.computer-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.computer {
+  display: block;
+}
+
+.image-container {
+  position: absolute;
+  top: 5%;
+  left: 4.4%;
+  width: 91.4%;
+  height: 62.4%;
+}
+
+.project-title {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-accent-bg);
+  color: var(--color-accent-text);
+  font-weight: 500;
+
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  margin-right: 0.7rem;
+}

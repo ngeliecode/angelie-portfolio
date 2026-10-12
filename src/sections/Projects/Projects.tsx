@@ -1,10 +1,11 @@
-import computer from '../../assets/computer.svg'
+import ProjectCard from '../../components/ProjectCard/ProjectCard'
 
 const Projects = () => {
   return (
     <section id="projects" className="items-center gap-4">
       <h2>Projects</h2>
-      <img src={computer} alt="" />
+
+      <ProjectCard />
     </section>
   )
 }
