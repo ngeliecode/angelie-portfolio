@@ -1,0 +1,18 @@
+.project-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.computer-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-image {
+  position: absolute;
+  top: 4.94%;
+  left: 4.25%;
+  width: 91.5%;
+  height: 62.5%;
+}
