@@ -2,12 +2,17 @@ import { Moon, Sun } from 'lucide-react'
 
 export type ThemeProps = {
   theme: string
-  toggleTheme: () => void
+  setTheme: (theme: string) => void
 }
 
-const ThemeToggle = ({ theme, toggleTheme }: ThemeProps) => {
+const ThemeToggle = ({ theme, setTheme }: ThemeProps) => {
   return (
-    <button className="theme-toggle" type="button" onClick={toggleTheme}>
+    <button
+      className="theme-toggle"
+      type="button"
+      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      aria-label="Toggle theme"
+    >
       {theme === 'light' ? (
         <Moon size={34} strokeWidth={1.5} />
       ) : (

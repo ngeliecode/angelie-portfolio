@@ -1,4 +1,5 @@
 import { House } from 'lucide-react'
+import { Link } from 'react-router'
 
 type HomeButtonProps = {
   isHidden: boolean
@@ -6,9 +7,13 @@ type HomeButtonProps = {
 
 const HomeButton = ({ isHidden }: HomeButtonProps) => {
   return (
-    <a href="#" className={isHidden ? 'invisible' : ''} aria-label="Go to home">
+    <Link
+      to="/"
+      className={isHidden ? 'invisible' : ''}
+      aria-label="Go to home"
+    >
       <House size={34} strokeWidth={1.5} />
-    </a>
+    </Link>
   )
 }
 

@@ -1,29 +1,30 @@
 import './Nav.css'
+import { Link } from 'react-router'
 
 const Nav = () => {
   return (
     <nav className="home-menu flex flex-col gap-2 uppercase">
       <ul>
         <li>
-          <a href="#about">
+          <Link to="/about">
             <span>About me</span>
             <span>I</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#projects">
+          <Link to="/projects">
             <span>Projects</span>
             <span>II</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#contact">
+          <Link to="/contact">
             <span>Contact</span>
             <span>III</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <a href="/resume.pdf" target="_blank" rel="noreferrer">
             <span>Resume PDF</span>
             <span>IV</span>
           </a>
