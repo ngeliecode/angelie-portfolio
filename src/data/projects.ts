@@ -18,21 +18,18 @@ export const projects = [
     title: 'Projekt 3',
     description:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, cum nihil expedita accusantium dolor laudantium tempore itaque, nesciunt corrupti neque quidem ratione in quod dolorum illum eaque perspiciatis facere suscipit.',
-    image: '',
   },
   {
     id: 4,
     title: 'Projekt 4',
     description:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, cum nihil expedita accusantium dolor laudantium tempore itaque, nesciunt corrupti neque quidem ratione in quod dolorum illum eaque perspiciatis facere suscipit.',
-    image: '',
   },
   {
     id: 5,
     title: 'Projekt 5',
     description:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, cum nihil expedita accusantium dolor laudantium tempore itaque, nesciunt corrupti neque quidem ratione in quod dolorum illum eaque perspiciatis facere suscipit.',
-    image: '',
   },
   {
     id: 6,
