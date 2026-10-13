@@ -1,8 +1,12 @@
+// React
 import { useState, useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router'
 
+// React Router
+import { Routes, Route, useLocation } from 'react-router'
+import { Link } from 'react-router'
+
+// Components
 import ThemeToggle from './components/ThemeToggle'
-import HomeLink from './components/HomeLink'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -25,7 +29,12 @@ const App = () => {
     <>
       <div className="top-bar">
         <ThemeToggle theme={theme} setTheme={setTheme} />
-        <HomeLink isHidden={isHidden} />
+        <Link
+          to="/"
+          className={`${isHidden ? 'invisible' : ''} home-link min-h-[44px] flex items-center`}
+        >
+          Go home
+        </Link>
       </div>
 
       <Routes>
