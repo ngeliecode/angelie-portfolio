@@ -17,10 +17,19 @@
   height: 62.5%;
 }
 
-.swipe {
+.projects-buttons {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.2rem;
+}
 
-  font-size: 3rem;
+.projects-buttons button {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  background: var(--color-accent-bg);
+}
+
+.projects-buttons button.active {
+  background: black;
 }
