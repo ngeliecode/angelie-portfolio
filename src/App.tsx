@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router'
 
 import ThemeToggle from './components/ThemeToggle'
-import HomeButton from './components/HomeButton'
+import HomeLink from './components/HomeLink'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -23,10 +23,10 @@ const App = () => {
 
   return (
     <>
-      <nav className="navbar">
-        <HomeButton isHidden={isHidden} />
+      <div className="top-bar">
         <ThemeToggle theme={theme} setTheme={setTheme} />
-      </nav>
+        <HomeLink isHidden={isHidden} />
+      </div>
 
       <Routes>
         <Route path="/" element={<Home />} />
