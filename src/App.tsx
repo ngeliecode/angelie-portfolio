@@ -27,24 +27,25 @@ const App = () => {
 
   return (
     <>
-      <div className="top-bar">
-        <ThemeToggle theme={theme} setTheme={setTheme} />
-        <Link
-          to="/"
-          className={`${isHidden ? 'invisible' : ''} home-link min-h-[44px] flex items-center`}
-        >
-          Go home
-        </Link>
+      <div className="wrapper">
+        <div className="top-bar">
+          <ThemeToggle theme={theme} setTheme={setTheme} />
+          <Link
+            to="/"
+            className={`${isHidden ? 'invisible' : ''} home-link min-h-[44px] flex items-center`}
+          >
+            Go home
+          </Link>
+        </div>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
       </div>
-
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
     </>
   )
 }
