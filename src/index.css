@@ -49,12 +49,10 @@ h2 {
 
 .top-bar {
   width: 100%;
-  min-height: 8rem;
+  margin-top: clamp(1rem, 15vw, 10rem);
 
   display: flex;
   flex-direction: column;
-
-  justify-content: end;
   align-items: center;
 
   text-transform: uppercase;
