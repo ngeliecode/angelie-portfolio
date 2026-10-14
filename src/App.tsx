@@ -29,7 +29,11 @@ const App = () => {
   return (
     <>
       <div className="top-bar">
-        <Link to="/" aria-label="Go home">
+        <Link
+          to="/"
+          className="inline-flex h-11 w-11 items-center justify-center"
+          aria-label="Go home"
+        >
           <img src={theme === 'dark' ? logoWhite : logoBlack} alt="" />
         </Link>
         <ThemeToggle theme={theme} setTheme={setTheme} />
