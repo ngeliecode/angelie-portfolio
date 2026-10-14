@@ -4,6 +4,10 @@
   margin-bottom: 1rem;
 }
 
+.project-image-container a {
+  cursor: pointer;
+}
+
 .computer-illustration {
   display: block;
   width: 100%;
@@ -20,18 +24,36 @@
 
 .project {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .project-title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 
 .project-description {
-  margin-bottom: 2.5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-links a {
+  cursor: pointer;
+}
+
+.project-links > :first-child:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.project-links > :last-child:hover {
+  border-bottom: 1px solid currentColor;
 }
 
 .projects-buttons {
@@ -45,6 +67,7 @@
   height: 1.7rem;
   border-radius: 999px;
   background: var(--color-accent-bg);
+  cursor: pointer;
 }
 
 .projects-buttons button.active {

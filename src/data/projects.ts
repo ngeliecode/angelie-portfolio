@@ -1,16 +1,15 @@
 export const projects = [
   {
     id: 1,
-    title: 'Marauders escape room',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, cum nihil expedita accusantium dolor laudantium tempore itaque, nesciunt corrupti neque quidem ratione in quod dolorum illum eaque perspiciatis facere suscipit.',
+    title: 'Mars Bound Marauders',
+    githubLink: 'https://github.com/ngeliecode/marauders-escape-room',
+    liveUrl:
+      'https://medieinstitutet.github.io/fed25d-js-intro-grupparbete-the-mars-bound-marauders/',
     image: '/images/marauders.jpg',
   },
   {
     id: 2,
     title: 'A mini project',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, cum nihil expedita accusantium dolor laudantium tempore itaque, nesciunt corrupti neque quidem ratione in quod dolorum illum eaque perspiciatis facere suscipit.',
     image: '/images/animation2.jpg',
   },
   {

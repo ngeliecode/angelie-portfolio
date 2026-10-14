@@ -13,11 +13,35 @@ const Projects = () => {
       <div className="project">
         <div className="project-image-container">
           <img className="computer-illustration" src={computer} alt="" />
-          <img className="project-image" src={projects[active].image} alt="" />
+          <a
+            href={projects[active].liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="project-image"
+              src={projects[active].image}
+              alt=""
+            />
+          </a>
         </div>
 
-        <h3 className="project-title">{projects[active].title}</h3>
-        <p className="project-description">{projects[active].description}</p>
+        <div className="project-links">
+          <a
+            href={projects[active].liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3 className="project-title">{projects[active].title}</h3>
+          </a>
+          <a
+            href={projects[active].githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Repo
+          </a>
+        </div>
       </div>
 
       <div className="projects-buttons">
