@@ -11,6 +11,7 @@ import logoWhite from './assets/logo-white.svg'
 
 // Components
 import ThemeToggle from './components/ThemeToggle'
+import Nav from './components/Nav'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -36,6 +37,9 @@ const App = () => {
         >
           <img src={theme === 'dark' ? logoWhite : logoBlack} alt="" />
         </Link>
+
+        <Nav />
+
         <ThemeToggle theme={theme} setTheme={setTheme} />
       </div>
       <div className="wrapper">

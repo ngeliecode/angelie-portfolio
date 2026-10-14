@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
-import Nav from '../../components/Nav'
 import './Home.css'
 
 const Home = () => {
@@ -13,8 +12,6 @@ const Home = () => {
       </h1>
 
       <p>Frontend Developer</p>
-
-      <Nav />
 
       <div className="socials">
         <a

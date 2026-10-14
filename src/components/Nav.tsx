@@ -2,31 +2,16 @@ import { Link } from 'react-router'
 
 const Nav = () => {
   return (
-    <nav className="home-menu flex flex-col gap-2 uppercase">
+    <nav>
       <ul>
         <li>
-          <Link to="/about">
-            <span>About me</span>
-            <span>I</span>
-          </Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/projects">
-            <span>Projects</span>
-            <span>II</span>
-          </Link>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="/contact">
-            <span>Contact</span>
-            <span>III</span>
-          </Link>
-        </li>
-        <li>
-          <a href="/resume.pdf" target="_blank" rel="noreferrer">
-            <span>Resume PDF</span>
-            <span>IV</span>
-          </a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>

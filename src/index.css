@@ -67,10 +67,29 @@ h2 {
   width: 100%;
 
   display: flex;
+  gap: 1.5rem;
   justify-content: space-between;
   align-items: center;
 
   padding: 0.8rem 1rem;
 
   text-transform: uppercase;
+}
+
+.top-bar > :nth-child(3) {
+  margin-left: auto;
+}
+
+.top-bar nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.top-bar nav li {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.top-bar nav li:hover {
+  text-decoration: underline;
 }
