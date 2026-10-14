@@ -1,13 +1,21 @@
+.home h1 {
+  font-size: clamp(2.5rem, 10vw, 3.1rem);
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
 .home p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.socials {
   text-align: center;
 }
 
 .home-menu {
-  width: 100%;
-  min-width: 150px;
-  max-width: 470px;
-
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .home-menu ul {

@@ -35,13 +35,8 @@ body {
 h1,
 h2 {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
-}
-
-h1 {
-  font-size: clamp(2.5rem, 10vw, 3.3rem);
-  line-height: normal;
 }
 
 h2 {
@@ -55,11 +50,12 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin: 0.5rem;
 }
 
 .top-bar {
   width: 100%;
-  margin-top: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -69,13 +65,8 @@ h2 {
 }
 
 main {
-  padding-inline: 1rem;
-}
-
-/* All pages have this in common */
-section {
   width: 100%;
+  min-width: 265px;
   max-width: 470px;
-
-  margin: 0 auto;
+  min-height: 568px;
 }

@@ -10,7 +10,7 @@ const Home = () => {
         <br /> I’m Angelie
       </h1>
 
-      <p>Text</p>
+      <p>Frontend Developer</p>
 
       <nav className="home-menu flex flex-col gap-2 uppercase">
         <ul>
@@ -41,7 +41,7 @@ const Home = () => {
         </ul>
       </nav>
 
-      <div>Socials</div>
+      <div className="socials">Socials</div>
     </section>
   )
 }

@@ -1,10 +1,12 @@
 const About = () => {
   return (
-    <section id="about" className="h-screen">
+    <section id="about">
       <h2>About me</h2>
       <p>
-        Hello again, my name is Angelie Ångman. I'm a frontend developer
-        student, based in Sweden, Västerbotten, Skellefteå.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rerum
+        temporibus eveniet commodi natus alias quas praesentium laborum
+        recusandae! Rerum earum laborum eaque quia similique est ex molestiae
+        dolores blanditiis?
       </p>
     </section>
   )
