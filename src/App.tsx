@@ -38,11 +38,18 @@ const App = () => {
           <img src={theme === 'dark' ? logoWhite : logoBlack} alt="" />
         </Link>
 
-        <Nav />
+        <div className="desktop-menu">
+          <Nav />
+        </div>
 
         <ThemeToggle theme={theme} setTheme={setTheme} />
         <button className="menu-btn md:hidden">Menu</button>
       </div>
+
+      <div className="mobile-menu">
+        <Nav />
+      </div>
+
       <div className="wrapper">
         <main>
           <Routes>
