@@ -43,15 +43,20 @@ h2 {
   font-size: 2.5rem;
 }
 
-.wrapper {
-  min-height: 100dvh;
-
+#root {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100dvh;
+}
 
-  margin: 1rem;
+.wrapper {
+  width: 100%;
+  min-width: 300px;
+  max-width: 470px;
+  min-height: 550px;
+  padding: 1rem;
 }
 
 .top-bar {
@@ -62,11 +67,4 @@ h2 {
   align-items: center;
 
   text-transform: uppercase;
-}
-
-main {
-  width: 100%;
-  min-width: 265px;
-  max-width: 470px;
-  min-height: 568px;
 }
