@@ -14,9 +14,9 @@ const ThemeToggle = ({ theme, setTheme }: ThemeProps) => {
       aria-label="Toggle theme"
     >
       {theme === 'light' ? (
-        <Moon size={30} strokeWidth={1} />
+        <Moon size={28} strokeWidth={1} />
       ) : (
-        <Sun size={30} strokeWidth={1} />
+        <Sun size={28} strokeWidth={1} />
       )}
     </button>
   )
