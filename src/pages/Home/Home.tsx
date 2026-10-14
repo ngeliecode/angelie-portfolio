@@ -47,14 +47,14 @@ const Home = () => {
         <a
           href="#"
           aria-label="GitHub"
-          className="inline-flex h-8 w-8 items-center justify-center"
+          className="inline-flex h-11 w-11 items-center justify-center"
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
           href="#"
           aria-label="LinkedIn"
-          className="inline-flex h-8 w-8 items-center justify-center"
+          className="inline-flex h-11 w-11 items-center justify-center"
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
