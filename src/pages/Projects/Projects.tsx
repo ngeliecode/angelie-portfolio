@@ -16,7 +16,7 @@ const Projects = () => {
           <img className="project-image" src={projects[active].image} alt="" />
         </div>
 
-        <h3>{projects[active].title}</h3>
+        <h3 className="project-title">{projects[active].title}</h3>
         <p className="project-description">{projects[active].description}</p>
       </div>
 
