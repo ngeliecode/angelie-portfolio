@@ -54,9 +54,6 @@ h2 {
 
 .wrapper {
   width: 100%;
-  min-width: 300px;
-  max-width: 470px;
-  min-height: 550px;
   padding: 1rem;
 }
 
