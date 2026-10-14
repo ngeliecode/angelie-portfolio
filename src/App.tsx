@@ -41,7 +41,7 @@ const App = () => {
         <Nav />
 
         <ThemeToggle theme={theme} setTheme={setTheme} />
-        <button className="menu-btn">Menu</button>
+        <button className="menu-btn md:hidden">Menu</button>
       </div>
       <div className="wrapper">
         <main>
