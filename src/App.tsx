@@ -2,8 +2,12 @@
 import { useState, useEffect } from 'react'
 
 // React Router
-import { Routes, Route, useLocation } from 'react-router'
+import { Routes, Route } from 'react-router'
 import { Link } from 'react-router'
+
+// Logos
+import logoBlack from './assets/logo-black.svg'
+import logoWhite from './assets/logo-white.svg'
 
 // Components
 import ThemeToggle from './components/ThemeToggle'
@@ -17,9 +21,6 @@ import Contact from './pages/Contact/Contact'
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
 
-  const location = useLocation()
-  const isHidden = location.pathname === '/'
-
   useEffect(() => {
     document.body.classList.toggle('dark', theme === 'dark')
     localStorage.setItem('theme', theme)
@@ -28,11 +29,8 @@ const App = () => {
   return (
     <>
       <div className="top-bar">
-        <Link
-          to="/"
-          className={`${isHidden ? 'invisible' : ''} home-link min-h-[44px] flex items-center`}
-        >
-          Go home
+        <Link to="/" aria-label="Go home">
+          <img src={theme === 'dark' ? logoWhite : logoBlack} alt="" />
         </Link>
         <ThemeToggle theme={theme} setTheme={setTheme} />
       </div>
