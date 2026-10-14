@@ -1,14 +1,15 @@
 .home h1 {
-  font-size: clamp(2.5rem, 10vw, 3.1rem);
+  font-size: clamp(2.9rem, 11vw, 3.2rem);
   line-height: normal;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .home p {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: clamp(1rem, 4vw, 1.2rem);
+  margin-bottom: 2.3rem;
+  font-size: clamp(1.3rem, 5vw, 1.4rem);
   font-weight: 600;
+  font-family: var(--font-heading);
 }
 
 .socials {
@@ -26,7 +27,7 @@
 .home-menu ul {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .home-menu a {
@@ -34,7 +35,8 @@
   align-items: baseline;
   gap: 0.3rem;
 
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
 
   cursor: pointer;
   transition: transform 0.2s ease;
