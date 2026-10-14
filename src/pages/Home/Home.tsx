@@ -3,7 +3,7 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <section id="home" className="gap-5 items-center text-center">
+    <section id="home" className="home">
       <h1>
         Welcome
         <br /> web traveler,

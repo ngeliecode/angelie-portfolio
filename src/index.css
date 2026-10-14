@@ -19,10 +19,6 @@
   --font-text: monospace;
 }
 
-.hidden {
-  display: none;
-}
-
 .dark {
   --color-background: #1a1a1a;
   --color-text: #f5f5f5;
@@ -34,46 +30,24 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-text);
-
-  /* No scroll */
-  overflow: hidden;
 }
 
 h1,
 h2 {
   font-family: var(--font-heading);
   font-weight: 700;
+  text-align: center;
 }
 
 h1 {
   font-size: clamp(2.5rem, 10vw, 3.3rem);
-  min-width: 300px;
 }
 
 h2 {
   font-size: 2.5rem;
 }
 
-/* All pages have this in common */
-section {
-  height: 100vh;
-  width: 100%;
-  max-width: 470px;
-  /* min-width */
-
-  margin: 0 auto;
-  padding-inline: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-}
-
 .top-bar {
-  position: fixed;
-  top: 0;
-
   width: 100%;
   min-height: 8rem;
 
@@ -84,4 +58,16 @@ section {
   align-items: center;
 
   text-transform: uppercase;
+}
+
+main {
+  padding-inline: 1rem;
+}
+
+/* All pages have this in common */
+section {
+  width: 100%;
+  max-width: 470px;
+
+  margin: 0 auto;
 }
