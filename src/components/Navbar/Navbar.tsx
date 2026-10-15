@@ -1,11 +1,6 @@
 // React
 import { useState, useEffect } from 'react'
-
-// Routing
 import { Link } from 'react-router'
-
-// Icons
-import { TextAlignEnd, X } from 'lucide-react'
 
 // Assets
 import logoBlack from '../../assets/logo-black.svg'
@@ -13,6 +8,7 @@ import logoWhite from '../../assets/logo-white.svg'
 
 // Components
 import ThemeToggle from '../ThemeToggle/ThemeToggle'
+import MenuToggle from '../MenuToggle/MenuToggle'
 import Menu from '../Menu/Menu'
 
 // Styles
@@ -62,20 +58,9 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
         <Menu />
       </div>
 
-      <ThemeToggle theme={theme} setTheme={setTheme} />
+      <MenuToggle isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
-      <button
-        className="menu-toggle"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        aria-expanded={isMenuOpen}
-        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-      >
-        {isMenuOpen ? (
-          <X size={28} strokeWidth={1.5} />
-        ) : (
-          <TextAlignEnd size={28} strokeWidth={1.5} />
-        )}
-      </button>
+      <ThemeToggle theme={theme} setTheme={setTheme} />
     </nav>
   )
 }
