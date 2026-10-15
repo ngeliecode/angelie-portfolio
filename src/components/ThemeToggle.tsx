@@ -8,15 +8,15 @@ export type ThemeProps = {
 const ThemeToggle = ({ theme, setTheme }: ThemeProps) => {
   return (
     <button
-      className="theme-toggle inline-flex h-11 w-11 items-center justify-center"
+      className="theme-toggle"
       type="button"
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       aria-label="Toggle theme"
     >
       {theme === 'light' ? (
-        <Moon size={28} strokeWidth={1} />
+        <Moon size={28} strokeWidth={1.5} />
       ) : (
-        <Sun size={28} strokeWidth={1} />
+        <Sun size={28} strokeWidth={1.5} />
       )}
     </button>
   )

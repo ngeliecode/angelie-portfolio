@@ -9,7 +9,7 @@
   margin-bottom: 2.3rem;
   font-size: clamp(1.3rem, 5vw, 1.4rem);
   font-weight: 600;
-  font-family: var(--font-heading);
+  font-family: var(--font-fluid);
 }
 
 .socials {
