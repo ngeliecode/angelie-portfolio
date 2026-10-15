@@ -1,6 +1,6 @@
 import { Moon, Sun } from 'lucide-react'
 
-export type ThemeProps = {
+type ThemeProps = {
   theme: string
   setTheme: (theme: string) => void
 }

@@ -18,7 +18,12 @@ import Menu from '../Menu/Menu'
 // Styles
 import './Navbar.css'
 
-const Navbar = ({ theme, setTheme }) => {
+type NavbarProps = {
+  theme: string
+  setTheme: (theme: string) => void
+}
+
+const Navbar = ({ theme, setTheme }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
