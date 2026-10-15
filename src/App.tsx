@@ -55,7 +55,14 @@ const App = () => {
           <Menu />
         </div>
 
-        <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+        <div
+          className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}
+          onClick={(e) => {
+            if ((e.target as HTMLElement).closest('a')) {
+              setIsMenuOpen(false)
+            }
+          }}
+        >
           <Menu />
         </div>
 
