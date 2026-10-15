@@ -9,7 +9,7 @@ import logoWhite from '../../assets/logo-white.svg'
 // Components
 import ThemeToggle from '../ThemeToggle/ThemeToggle'
 import MenuToggle from '../MenuToggle/MenuToggle'
-import Menu from '../Menu/Menu'
+import NavLinks from '../NavLinks/NavLinks'
 
 // Styles
 import './Navbar.css'
@@ -44,7 +44,7 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
       </Link>
 
       <div className="desktop-menu">
-        <Menu />
+        <NavLinks />
       </div>
 
       <div
@@ -55,7 +55,7 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
           }
         }}
       >
-        <Menu />
+        <NavLinks />
       </div>
 
       <MenuToggle isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />

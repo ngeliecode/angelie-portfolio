@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 
-const Menu = () => {
+const NavLinks = () => {
   return (
     <ul>
       <li>
@@ -16,4 +16,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default NavLinks
