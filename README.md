@@ -20,3 +20,12 @@ Besök min portfolio 👉 [här](https://angelie-portfolio-ten.vercel.app/)
 Jag gjorde om min design många gånger under arbetets gång. Det började med en ganska avancerad design, men efter hand blev den enklare. Mina ambitioner var större än vad jag kunde genomföra just nu, och vissa idéer som verkade bra i huvudet fungerade inte lika bra när jag väl började bygga dem.
 
 Designen jag har valt att visa upp är därför enklare. En illustration som jag gjorde tidigt i processen fick däremot vara kvar. Den föreställer en dator som skulle rama in projektbilderna och få dem att passa in i skärmen. Tyvärr upptäckte jag nära inpå deadline att illustrationen inte skalade som jag hade tänkt mig. Därför fick jag bygga om projektsidan och ersätta den ursprungliga lösningen med en enklare grid-layout.
+
+## Klona repot
+
+1. Klona repot från GitHub.
+2. Installera projektets dependencies:
+   `npm install`
+3. Starta utvecklingsservern:
+   `npm run dev`
+4. Öppna den lokala adressen som visas i terminalen, vanligtvis http://localhost:5173.
