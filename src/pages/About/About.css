@@ -1,0 +1,26 @@
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.resume-link {
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  margin-bottom: 1rem;
+}
+.resume-link:hover {
+  color: var(--color-hoover-text);
+}
+
+.resume-link span {
+  font-style: normal;
+}
+
+.about-image {
+  border-radius: 33px;
+  margin-block: 1rem;
+}
