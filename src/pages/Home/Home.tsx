@@ -5,7 +5,7 @@ const Home = () => {
     <section id="home" className="home">
       <h1>
         Välkommen
-        <br /> webb resenär, jag
+        <br /> webbresenär, jag
         <br /> heter Angelie
       </h1>
 

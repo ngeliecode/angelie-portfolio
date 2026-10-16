@@ -12,9 +12,9 @@ const About = () => {
         />
         <div className="about-text">
           <p>
-            Hejsan! Jag heter Angelie Ångman och jag är 33 år gammal. Jag
-            studerar till Frontend Developer vid Medieinstitutet. Jag bor i
-            Skellefteå, Västerbotten. 📍
+            Hejsan! Jag heter Angelie Ångman. Jag studerar till Frontend
+            Developer vid Medieinstitutet. Jag bor i 📍 Skellefteå,
+            Västerbotten.
           </p>
           <p>
             Jag är intresserad av estetik och visuellt uttryck och trivs med

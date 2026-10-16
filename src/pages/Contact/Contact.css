@@ -1,11 +1,11 @@
-main {
+#contact {
+  text-align: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-#contact {
-  text-align: center;
+  height: 100%;
 }
 
 #contact h2 {
