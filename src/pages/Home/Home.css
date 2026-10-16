@@ -1,15 +1,26 @@
+.home {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .home h1 {
-  font-size: clamp(2.9rem, 11vw, 3.2rem);
+  font-size: clamp(2.9rem, 12vw, 5rem);
   line-height: normal;
-  margin-bottom: 0.6rem;
+  min-width: 360px;
+  text-align: center;
+  margin-bottom: clamp(1rem, 5vw, 2rem);
 }
 
 .home p {
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  font-weight: 500;
+  font-family: var(--font-text);
   text-align: center;
   margin-bottom: 2.3rem;
-  font-size: clamp(1.3rem, 5vw, 1.4rem);
-  font-weight: 600;
-  font-family: var(--font-fluid);
 }
 
 .socials {

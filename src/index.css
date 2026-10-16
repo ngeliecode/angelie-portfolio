@@ -11,7 +11,7 @@
 
 :root {
   --color-background: #f5f5f5;
-  --color-overlay: #f5f5f5e4;
+  --color-overlay: #f5f5f5;
   --color-text: #1a1a1a;
   --color-accent-bg: #7a7a7a;
   --color-accent-text: #fff;
@@ -22,8 +22,8 @@
 }
 
 .dark {
-  --color-background: #1a1a1a;
-  --color-overlay: #1a1a1ae9;
+  --color-background: #2a2a2a;
+  --color-overlay: #1a1a1a;
   --color-text: #f5f5f5;
   --color-accent-bg: #353535;
   --color-accent-text: #000;
@@ -42,14 +42,8 @@ h2 {
   font-weight: 900;
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
 h2 {
   font-size: 2.5rem;
-  /* margin-bottom: 1rem; */
 }
 
 button,
@@ -57,53 +51,36 @@ a {
   cursor: pointer;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100dvh;
-}
-
-main {
-  width: 100%;
-  min-width: 300px;
-  max-width: 570px;
-  padding: 1rem;
-}
-
 .mobile-menu {
   display: none;
 }
 
 .mobile-menu.open {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-
-  /* Entire screen */
   inset: 0;
 
-  /* Parts of the screen */
-  /* inset: 0 0 0 auto;
-  width: 65%; */
   padding: 6rem 1.8rem;
 
-  z-index: 1;
+  z-index: 100;
 
   background: var(--color-overlay);
 }
 
 .menu-toggle {
-  z-index: 2;
+  z-index: 102;
 }
 
 .mobile-menu li {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  text-align: end;
-  border-bottom: 1px solid var(--color-background);
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid var(--color-overlay);
 }
 
 .mobile-menu li:hover {
-  border-bottom: 1px solid var(--color-border);
+  border: 1px solid var(--color-border);
 }

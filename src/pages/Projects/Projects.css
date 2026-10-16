@@ -1,68 +1,42 @@
-.project-image-container {
-  position: relative;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.project-image-container a {
-  cursor: pointer;
-}
-
-.computer-illustration {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.project-image {
-  position: absolute;
-  top: 4.94%;
-  left: 4.25%;
-  width: 91.5%;
-  height: 62.5%;
-}
-
-.project {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.project-title {
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-
-.project-description {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-.project-links {
+.projects {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100dvh - 80px);
 }
 
-.project-links a {
-  cursor: pointer;
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.project-links > :first-child:hover {
-  border-bottom: 1px solid currentColor;
-}
+/* @media (min-width: 900px) {
+  .projects {
+    justify-content: center;
+    align-items: center;
+  }
+  .projects-content {
+    max-width: 700px;
+  }
+} */
 
-.project-links > :last-child:hover {
-  border-bottom: 1px solid currentColor;
-}
+.projects-navigate {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
-.projects-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding-block: 1rem 1.5rem;
+  width: 100%;
+  background: var(--color-background);
 }
 
-.projects-buttons button {
+.projects-navigate button {
   width: 1.7rem;
   height: 1.7rem;
   border-radius: 999px;
@@ -70,6 +44,6 @@
   cursor: pointer;
 }
 
-.projects-buttons button.active {
+.projects-navigate button.active {
   background: black;
 }

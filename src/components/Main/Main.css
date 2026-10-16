@@ -1,0 +1,11 @@
+main {
+  width: 100%;
+  height: calc(100vh - 160px);
+  padding-inline: 1.3rem;
+  /* overflow: hidden; */
+}
+
+section h2 {
+  font-size: clamp(2rem, 10vw, 4rem);
+  margin-bottom: 1rem;
+}

@@ -1,3 +1,4 @@
+import './MenuToggle.css'
 import { TextAlignEnd, X } from 'lucide-react'
 
 type MenuToggleProps = {

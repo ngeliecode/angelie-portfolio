@@ -1,0 +1,78 @@
+/* Project card Layout*/
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  max-width: 570px;
+}
+
+/* Looks good at 320px screen */
+.project-image,
+.project-info {
+  min-width: 290px;
+}
+
+.project-info {
+  padding-bottom: 5rem;
+}
+
+.project-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-block: 0.5rem;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.project-github {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 1024px) {
+  .project-card {
+    flex-direction: row;
+    gap: 2rem;
+
+    min-width: none;
+    max-width: none;
+
+    align-items: normal;
+  }
+
+  .project-image {
+    min-width: 300px;
+    flex: 2;
+  }
+
+  .project-info {
+    flex: 1;
+  }
+}
+
+/* Project screenshot inside computer screen */
+.project-image {
+  position: relative;
+  margin-bottom: 1rem;
+  max-width: 450px;
+}
+
+.computer-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-screenshot {
+  position: absolute;
+  top: 4.94%;
+  left: 4.25%;
+  width: 91.5%;
+  height: 62.5%;
+}

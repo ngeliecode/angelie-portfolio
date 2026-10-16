@@ -58,9 +58,9 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
         <NavLinks />
       </div>
 
-      <MenuToggle isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-
       <ThemeToggle theme={theme} setTheme={setTheme} />
+
+      <MenuToggle isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </nav>
   )
 }
