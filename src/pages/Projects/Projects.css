@@ -31,7 +31,8 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  padding-block: 1rem 1.5rem;
+  padding-block: clamp(1rem, 3vw, 2rem);
+  padding-inline: clamp(1.5rem, 3vw, 3rem);
   width: 100%;
   background: var(--color-background);
 }

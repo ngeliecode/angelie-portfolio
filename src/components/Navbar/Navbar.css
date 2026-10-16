@@ -11,6 +11,7 @@
   align-items: center;
   gap: 0.2rem;
 
+  margin-bottom: 1.5rem;
   padding: 0.8rem;
 
   background: var(--color-background);

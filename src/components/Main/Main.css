@@ -6,6 +6,7 @@ main {
 }
 
 section h2 {
-  font-size: clamp(2rem, 10vw, 4rem);
-  margin-bottom: 1rem;
+  font-size: clamp(2rem, 10vw, 6rem);
+  text-align: center;
+  margin-bottom: clamp(1rem, 10vw, 1.5rem);
 }
