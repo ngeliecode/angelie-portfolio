@@ -4,16 +4,16 @@ const NavLinks = () => {
   return (
     <ul>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/">Hem</Link>
       </li>
       <li>
-        <Link to="/projects">Projects</Link>
+        <Link to="/projects">Projekt</Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about">Om mig</Link>
       </li>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact">Kontakt</Link>
       </li>
     </ul>
   )

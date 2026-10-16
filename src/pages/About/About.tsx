@@ -4,7 +4,7 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 const About = () => {
   return (
     <section id="about">
-      <h2>About</h2>
+      <h2>Om mig</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
 
       <div className="socials">

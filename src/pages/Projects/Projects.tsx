@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <h2>Projects</h2>
+      <h2>Projekt</h2>
 
       <div className="projects-content">
         <ProjectCard active={active} />

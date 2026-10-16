@@ -4,9 +4,9 @@ const Home = () => {
   return (
     <section id="home" className="home">
       <h1>
-        Welcome
-        <br /> web traveler,
-        <br /> I’m Angelie
+        Välkommen
+        <br /> webb resenär, jag
+        <br /> heter Angelie
       </h1>
 
       <p>Frontend Developer</p>
