@@ -22,11 +22,10 @@ const About = () => {
             saker, även när det innebär att ge mig ut på okänd mark.
           </p>
           <p>
-            På fritiden, när jag inte sitter vid tangentbordet, går jag
-            förmodligen runt hemma och hittar nya sätt att förbättra det
-            estetiskt. Annars blir det gärna soffhäng med en film, serie eller
-            bok, eller tid med min sambo – eller både och. Får jag riktigt
-            feeling plockar jag fram gitarren eller börjar måla!
+            På fritiden går jag förmodligen runt i mitt hem och försöker
+            förbättra det estetiskt. Annars blir det gärna soffan med en film,
+            serie eller bok, eller så spenderar jag tid med min sambo – eller
+            både och. Får jag feeling så går jag en lång skogspromenad.
           </p>
           <p>
             Nu söker jag en LIA-plats inom frontendutveckling och ser fram emot

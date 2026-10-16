@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.contact-email {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 1rem;
+}
+
+.contact-email:hover {
+  color: var(--color-hoover-text);
+}
+
+.socials {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.socials a {
+  font-size: 1.4rem;
+}
+
+.socials-text {
+  font-size: 1rem;
+}
