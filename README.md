@@ -4,7 +4,9 @@ Detta är min personliga portfolio, byggd som en del av kursen JavaScript Ramver
 
 Portfolion är byggd med React och TypeScript via Vite, och är stylad med vanlig CSS.
 
-Besök min portfolio 👉 [här](https://angelie-portfolio-ten.vercel.app/)
+## Live sida
+
+https://angelie-portfolio-ten.vercel.app/
 
 ## Tech stack
 
