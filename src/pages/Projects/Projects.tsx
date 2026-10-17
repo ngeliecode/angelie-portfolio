@@ -19,6 +19,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects">
       <h2>Projekt</h2>
+
       <div className="project-filters">
         <button
           type="button"
@@ -39,6 +40,7 @@ const Projects = () => {
           </button>
         ))}
       </div>
+
       <div className="projects-content">
         <div className="projects-list">
           {filteredProjects.map((project) => (

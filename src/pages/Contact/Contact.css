@@ -1,11 +1,13 @@
 #contact {
-  text-align: center;
+  height: calc(100vh - var(--navbar-height));
+  margin-top: calc(-1 * var(--navbar-height));
+  padding-top: calc(1 * var(--navbar-height));
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  height: 100%;
+  text-align: center;
 }
 
 #contact h2 {

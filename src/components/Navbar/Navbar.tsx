@@ -22,11 +22,11 @@ type NavbarProps = {
 const Navbar = ({ theme, setTheme }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  // Close mobile menu on big screen
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 768px)')
 
     const closeMenu = (event: MediaQueryListEvent) => {
-      console.log('Window is big?', mediaQuery.matches)
       if (event.matches) {
         setIsMenuOpen(false)
       }
@@ -36,6 +36,15 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
 
     return () => mediaQuery.removeEventListener('change', closeMenu)
   }, [])
+
+  // No scroll when mobile menu open
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : ''
+
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isMenuOpen])
 
   return (
     <nav className="navbar">

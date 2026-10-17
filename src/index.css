@@ -11,7 +11,7 @@
 
 :root {
   --color-background: #f4f1ed;
-  --color-overlay: #f5f5f5;
+  --color-overlay: #f4f1ed;
   --color-text: #1a1a1a;
   --color-hoover-text: #9b9b9b;
   --color-accent-bg: #2a2a2a;
@@ -20,6 +20,8 @@
 
   --font-fluid: 'Fraunces', serif;
   --font-text: monospace;
+
+  --navbar-height: 57px;
 }
 
 .dark {
@@ -60,6 +62,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+
   position: fixed;
   inset: 0;
 

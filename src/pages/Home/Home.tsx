@@ -2,7 +2,7 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <section id="home" className="home">
+    <section id="home">
       <h1>
         Välkommen
         <br /> webbresenär, jag
