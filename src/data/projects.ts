@@ -31,7 +31,7 @@ export const projects = [
   {
     id: 4,
     title: 'Mars Bound Marauders',
-    technologies: ['TypeScript', 'Express', 'Vite'],
+    technologies: ['TypeScript', 'Vite', 'HTML', 'CSS'],
     description:
       'Mars Bound Marauders är ett Escape Room-spel där användaren löser olika pussel. Det var vårt första grupparbete under utbildningen och genomfördes i kursen Agila metoder, där fokus låg på att arbeta agilt i team. Vi arbetade med Scrum och använde bland annat daily stand-ups, sprint planning, retrospectives och en backlog för att planera och följa upp arbetet.',
     image: '/images/marauders.jpg',
