@@ -58,7 +58,7 @@ const Projects = () => {
 
               <p>{project.description}</p>
 
-              {project.githubUrl && (
+              {/* {project.githubUrl && (
                 <a
                   href={project.githubUrl}
                   target="_blank"
@@ -66,7 +66,7 @@ const Projects = () => {
                 >
                   Läs mer om projektet på GitHub
                 </a>
-              )}
+              )} */}
 
               <div className="project-technologies">
                 {project.technologies.map((technology) => (
