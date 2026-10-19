@@ -9,6 +9,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.woff2') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color-background: #f4f1ed;
   --color-overlay: #f4f1ed;
@@ -20,7 +27,8 @@
   --color-border: gray;
 
   --font-fluid: 'Fraunces', serif;
-  --font-text: monospace;
+  --font-sans: 'Inter';
+  --font-mono: monospace;
 
   --navbar-height: 57px;
 }
@@ -42,7 +50,7 @@ html {
 body {
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: var(--font-text);
+  font-family: var(--font-mono);
 }
 
 h1,
@@ -52,7 +60,7 @@ h2 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 button,
