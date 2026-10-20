@@ -26,8 +26,10 @@
   --color-link-text: gray;
   --color-border: gray;
 
+  --button-border: #000;
+
   --font-fluid: 'Fraunces', serif;
-  --font-sans: 'Inter';
+  --font-sans: system-ui, sans-serif;
   --font-mono: monospace;
 
   --navbar-height: 57px;
@@ -41,6 +43,8 @@
   --color-accent-text: #000000;
   --color-link-text: #acacac;
   --color-border: #acacac;
+
+  --button-border: #fff;
 }
 
 html {

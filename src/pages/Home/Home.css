@@ -17,7 +17,7 @@
   line-height: normal;
   min-width: 600px;
   text-align: center;
-  margin-bottom: clamp(1rem, 5vw, 2rem);
+  margin-bottom: clamp(2rem, 5vw, 2rem);
 }
 
 #home p {
@@ -26,6 +26,29 @@
   font-family: var(--font-text);
   text-align: center;
   margin-bottom: 2.3rem;
+}
+
+.action {
+  margin-top: 0.5rem;
+}
+
+.action a {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.7rem 4rem;
+  border: 2px solid var(--button-border);
+  background: var(--color-text);
+  color: var(--color-accent-text);
+  border-radius: 999px;
+  margin: 0.7rem;
+}
+
+.action a:hover {
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+  background: var(--color-background);
 }
 
 @keyframes fadeInUp {
