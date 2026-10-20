@@ -1,10 +1,5 @@
 // React
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router'
-
-// Assets
-import logoBlack from '../../assets/logo-black.svg'
-import logoWhite from '../../assets/logo-white.svg'
 
 // Components
 import ThemeToggle from '../ThemeToggle/ThemeToggle'
@@ -48,9 +43,7 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="logo" aria-label="Go home">
-        <img src={theme === 'dark' ? logoWhite : logoBlack} alt="" />
-      </Link>
+      <ThemeToggle theme={theme} setTheme={setTheme} />
 
       <div className="desktop-menu">
         <NavLinks />
@@ -66,8 +59,6 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
       >
         <NavLinks />
       </div>
-
-      <ThemeToggle theme={theme} setTheme={setTheme} />
 
       <MenuToggle isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </nav>
