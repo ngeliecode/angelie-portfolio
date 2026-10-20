@@ -1,4 +1,5 @@
 import './Home.css'
+import { Link } from 'react-router'
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       </h1>
 
       <div className="action">
-        <a href="/about">Om mig</a>
+        <Link to="/about">Om mig</Link>
       </div>
     </section>
   )
