@@ -17,16 +17,20 @@ const Contact = () => {
         </a>
         <div className="socials">
           <a
-            href="#"
+            href="https://github.com/ngeliecode"
             aria-label="GitHub"
             className="inline-flex h-11 w-11 items-center justify-center"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
-            href="#"
+            href="https://linkedin.com/in/angelieångman"
             aria-label="LinkedIn"
             className="inline-flex h-11 w-11 items-center justify-center"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
