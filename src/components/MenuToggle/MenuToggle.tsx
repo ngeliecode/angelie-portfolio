@@ -1,5 +1,4 @@
 import './MenuToggle.css'
-import { TextAlignEnd, X } from 'lucide-react'
 
 type MenuToggleProps = {
   isMenuOpen: boolean
@@ -14,11 +13,7 @@ const MenuToggle = ({ isMenuOpen, setIsMenuOpen }: MenuToggleProps) => {
       aria-expanded={isMenuOpen}
       aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
     >
-      {isMenuOpen ? (
-        <X size={25} strokeWidth={1} />
-      ) : (
-        <TextAlignEnd size={25} strokeWidth={1} />
-      )}
+      {isMenuOpen ? 'Stäng' : 'Meny'}
     </button>
   )
 }
