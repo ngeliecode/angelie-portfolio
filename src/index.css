@@ -34,7 +34,7 @@
   --color-button-secondary-border: #000000;
 
   --font-serif: 'Fraunces', serif;
-  --font-sans: system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: monospace;
 
   --navbar-height: 57px;
@@ -114,7 +114,7 @@ body {
 h1,
 h2 {
   font-family: var(--font-serif);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h2 {
