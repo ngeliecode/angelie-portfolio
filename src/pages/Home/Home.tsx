@@ -11,7 +11,7 @@ const Home = () => {
       </h1>
 
       <div className="action">
-        <Link to="/about">Om mig</Link>
+        <Link to="/about">Lär känna mig ☺️</Link>
       </div>
     </section>
   )

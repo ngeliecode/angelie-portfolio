@@ -33,15 +33,15 @@
 }
 
 .action a {
-  font-family: var(--font-sans);
+  /* font-family: var(--font-sans); */
   font-size: 1rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 0.7rem 4rem;
+  font-weight: 700;
+
+  padding: 0.7rem 1.5rem;
   border: 2px solid var(--button-border);
   background: var(--color-text);
   color: var(--color-accent-text);
-  border-radius: 999px;
+  border-radius: 5px;
   margin: 0.7rem;
 }
 
