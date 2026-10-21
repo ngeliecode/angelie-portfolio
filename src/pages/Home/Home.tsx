@@ -3,15 +3,22 @@ import { Link } from 'react-router'
 
 const Home = () => {
   return (
-    <section id="home">
-      <h1>
-        Välkommen
-        <br /> webbresenär, jag
-        <br /> heter Angelie
-      </h1>
+    <section id="home" className="hero">
+      <div className="hero-content">
+        <h1>Välkommen, webbresenär..</h1>
+        <p className="hero-text">
+          Jag heter Angelie Ångman och jag studerar till frontendutvecklare.
+          Varsågod att utforska min portfolio!
+        </p>
+      </div>
 
-      <div className="action">
-        <Link to="/about">Lär känna mig ☺️</Link>
+      <div className="hero-actions">
+        <Link to="/about" className="button button-primary">
+          Lär känna mig <span>↗</span>
+        </Link>
+        <Link to="/projects" className="button button-secondary">
+          Utvalda projekt <span>↗</span>
+        </Link>
       </div>
     </section>
   )

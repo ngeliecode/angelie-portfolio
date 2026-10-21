@@ -4,6 +4,6 @@ main {
 }
 
 section h2 {
-  font-size: clamp(2rem, 10vw, 6rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   margin-bottom: clamp(1rem, 10vw, 1.5rem);
 }

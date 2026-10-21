@@ -17,8 +17,8 @@
 }
 
 :root {
-  --color-background: #f4f1ed;
-  --color-overlay: #f4f1ed;
+  --color-background: #ffffff;
+  --color-overlay: #ffffff;
   --color-text: #1a1a1a;
   --color-hoover-text: #9b9b9b;
   --color-accent-bg: #2a2a2a;
@@ -26,9 +26,14 @@
   --color-link-text: gray;
   --color-border: gray;
 
-  --button-border: #000;
+  --color-button-primary-bg: #000000;
+  --color-button-primary-text: #ffffff;
 
-  --font-fluid: 'Fraunces', serif;
+  --color-button-secondary-bg: transparent;
+  --color-button-secondary-text: #000000;
+  --color-button-secondary-border: #000000;
+
+  --font-serif: 'Fraunces', serif;
   --font-sans: system-ui, sans-serif;
   --font-mono: monospace;
 
@@ -36,15 +41,64 @@
 }
 
 .dark {
-  --color-background: #1f1f1f;
+  --color-background: #050505;
   --color-overlay: #1a1a1a;
   --color-text: #f5f5f5;
   --color-accent-bg: #c5c5c5;
-  --color-accent-text: #000000;
+  --color-accent-text: #050505;
   --color-link-text: #acacac;
   --color-border: #acacac;
 
-  --button-border: #fff;
+  --color-button-primary-bg: #ffffff;
+  --color-button-primary-text: #000000;
+
+  --color-button-secondary-bg: transparent;
+  --color-button-secondary-text: #ffffff;
+  --color-button-secondary-border: #ffffff;
+}
+
+.button {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.5rem;
+  border: 1.5px solid transparent;
+  border-radius: 5px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.button-primary {
+  background: var(--color-button-primary-bg);
+  color: var(--color-button-primary-text);
+  border-color: var(--color-button-primary-bg);
+}
+.button-primary:hover {
+  background: transparent;
+  color: var(--color-button-primary-bg);
+}
+
+.button-secondary {
+  background: var(--color-button-secondary-bg);
+  color: var(--color-button-secondary-text);
+  border-color: var(--color-button-secondary-border);
+}
+.button-secondary:hover {
+  background: var(--color-button-primary-bg);
+  color: var(--color-button-primary-text);
 }
 
 html {
@@ -59,8 +113,8 @@ body {
 
 h1,
 h2 {
-  font-family: var(--font-fluid);
-  font-weight: 900;
+  font-family: var(--font-serif);
+  font-weight: 600;
 }
 
 h2 {
