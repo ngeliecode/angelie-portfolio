@@ -1,4 +1,3 @@
-import './MenuToggle.css'
 import { Plus, X } from 'lucide-react'
 
 type MenuToggleProps = {
