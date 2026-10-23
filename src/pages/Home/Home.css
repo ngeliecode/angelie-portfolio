@@ -21,7 +21,7 @@
 
 .hero-text {
   font-family: var(--font-sans);
-  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
   line-height: 1.5;
 }
 
