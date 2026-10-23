@@ -1,6 +1,6 @@
 .hero {
   overflow: hidden;
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100dvh - var(--navbar-height));
   margin-top: calc(-1 * var(--navbar-height));
   padding-top: calc(1 * var(--navbar-height));
 
@@ -36,7 +36,6 @@
   gap: 1rem;
   width: 100%;
   margin-top: auto;
-  margin-bottom: 2rem;
 }
 
 .hero-actions span {
