@@ -10,8 +10,9 @@ const ThemeToggle = ({ theme, setTheme }: ThemeProps) => {
     <button
       className="theme-toggle"
       type="button"
+      // If theme is light, switch to dark. Otherwise, switch to light.
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-      aria-label="Toggle theme"
+      aria-label="Byt tema"
     >
       {theme === 'light' ? (
         <Moon size={30} strokeWidth={1.5} />

@@ -11,7 +11,12 @@
   align-items: center;
   gap: 0.7rem;
 
-  padding: 1rem;
+  /* Minus svg icons "padding-space" */
+  /* 16px - (7px + 2.8px) */
+  padding-left: calc(16px - 9.8px);
+  padding-right: calc(16px - 9.8px);
+  padding-bottom: calc(16px - 9.8px);
+  padding-top: 15.8px;
 
   background: var(--color-background);
 }
@@ -23,6 +28,21 @@
 @media (min-width: 768px) {
   .desktop-menu {
     display: block;
+  }
+}
+
+.theme-toggle,
+.menu-toggle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
 }
 
@@ -41,10 +61,4 @@
 
 .desktop-menu li:hover {
   border: 1px solid var(--color-border);
-}
-
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
 }

@@ -15,10 +15,12 @@ const Home = () => {
 
       <div className="hero-actions">
         <Link to="/about" className="button button-primary">
-          Lär känna mig <ArrowUpRight size="1.2em" strokeWidth={2.5} />
+          Lär känna mig
+          <ArrowUpRight size="1.2em" strokeWidth={2.5} />
         </Link>
         <Link to="/projects" className="button button-secondary">
-          Utvalda projekt <ArrowUpRight size="1.2em" strokeWidth={2.5} />
+          Utvalda projekt
+          <ArrowUpRight size="1.2em" strokeWidth={2.5} />
         </Link>
       </div>
     </section>

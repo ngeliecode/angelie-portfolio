@@ -22,7 +22,7 @@
 
 :root {
   --color-background: #ffffff;
-  --color-overlay: #ffffff;
+  --color-overlay: #dfdfdf;
   --color-text: #1a1a1a;
   --color-hoover-text: #9b9b9b;
   --color-accent-bg: #2a2a2a;
@@ -41,7 +41,7 @@
   --font-sans: 'Poppins', system-ui, sans-serif;
   --font-mono: monospace;
 
-  --navbar-height: 62px;
+  --navbar-height: 66px;
 }
 
 .dark {

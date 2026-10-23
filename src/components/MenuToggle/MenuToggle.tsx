@@ -1,4 +1,5 @@
 import './MenuToggle.css'
+import { Plus, X } from 'lucide-react'
 
 type MenuToggleProps = {
   isMenuOpen: boolean
@@ -11,9 +12,13 @@ const MenuToggle = ({ isMenuOpen, setIsMenuOpen }: MenuToggleProps) => {
       className="menu-toggle"
       onClick={() => setIsMenuOpen(!isMenuOpen)}
       aria-expanded={isMenuOpen}
-      aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+      aria-label={isMenuOpen ? 'Stäng meny' : 'Öppna meny'}
     >
-      {isMenuOpen ? 'Stäng' : 'Meny'}
+      {isMenuOpen ? (
+        <X size={30} strokeWidth={1.5} />
+      ) : (
+        <Plus size={30} strokeWidth={1.5} />
+      )}
     </button>
   )
 }
