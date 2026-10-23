@@ -1,5 +1,6 @@
 import './Home.css'
 import { Link } from 'react-router'
+import { ArrowUpRight } from 'lucide-react'
 
 const Home = () => {
   return (
@@ -14,10 +15,10 @@ const Home = () => {
 
       <div className="hero-actions">
         <Link to="/about" className="button button-primary">
-          Lär känna mig <span>↗</span>
+          Lär känna mig <ArrowUpRight size="1.2em" strokeWidth={2.5} />
         </Link>
         <Link to="/projects" className="button button-secondary">
-          Utvalda projekt <span>↗</span>
+          Utvalda projekt <ArrowUpRight size="1.2em" strokeWidth={2.5} />
         </Link>
       </div>
     </section>

@@ -34,10 +34,6 @@
   padding-bottom: 2rem;
 }
 
-.hero-actions span {
-  font-family: var(--font-sans);
-}
-
 @media (min-width: 550px) {
   .hero {
     margin-inline: auto;
