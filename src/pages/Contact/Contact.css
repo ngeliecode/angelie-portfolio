@@ -29,15 +29,7 @@
   color: var(--color-hoover-text);
 }
 
-.socials {
+#contact .social-links {
   text-align: center;
   margin-top: 2rem;
-}
-
-.socials a {
-  font-size: 1.4rem;
-}
-
-.socials-text {
-  font-size: 1rem;
 }

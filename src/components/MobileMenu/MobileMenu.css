@@ -1,0 +1,75 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; /* täcker hela skärmen */
+  z-index: 100;
+  padding: 6rem 1rem 1.5rem 1rem;
+  background: var(--color-overlay-background);
+  color: var(--color-overlay-foreground);
+
+  display: flex;
+  flex-direction: column;
+
+  transform: translateX(100%); /* utanför skärmen, till höger */
+  visibility: hidden; /* gömd för tangentbord och skärmläsare */
+  transition:
+    transform 0.3s ease,
+    visibility 0s linear 0.3s; /* gömmer först när animationen är klar */
+}
+
+/* Tablet: panel i stället för helskärm */
+@media (min-width: 600px) {
+  .mobile-menu {
+    width: min(500px, 80%); /* max 500px, men aldrig mer än 80% av skärmen */
+  }
+}
+
+/* Desktop: ingen mobilmeny alls */
+@media (min-width: 1024px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+  visibility: visible;
+  transition:
+    transform 0.3s ease,
+    visibility 0s; /* visas direkt vid öppning */
+}
+
+.menu-toggle {
+  z-index: 102;
+}
+
+.menu-toggle .close-icon {
+  color: var(--color-overlay-foreground);
+}
+
+.mobile-menu li {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 800;
+  letter-spacing: 5%;
+
+  margin-bottom: 2rem;
+  border-bottom: 1.5px solid var(--color-overlay-foreground);
+  padding-block: 0.5rem;
+}
+
+.mobile-menu li:hover,
+.mobile-menu .menu-link--active {
+  font-family: var(--font-serif);
+}
+
+.mobile-menu footer {
+  margin-top: auto; /* trycker ner footern längst ner */
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+}

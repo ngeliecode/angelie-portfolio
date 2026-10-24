@@ -14,9 +14,9 @@ const MenuToggle = ({ isMenuOpen, setIsMenuOpen }: MenuToggleProps) => {
       aria-label={isMenuOpen ? 'Stäng meny' : 'Öppna meny'}
     >
       {isMenuOpen ? (
-        <X size={30} strokeWidth={1.5} />
+        <X className="close-icon" size={30} strokeWidth={1.5} />
       ) : (
-        <Plus size={30} strokeWidth={1.5} />
+        <Plus className="open-icon" size={30} strokeWidth={1.5} />
       )}
     </button>
   )

@@ -1,19 +1,57 @@
-import { Link } from 'react-router'
+import { NavLink } from 'react-router'
 
 const NavLinks = () => {
   return (
     <ul>
       <li>
-        <Link to="/">Hem</Link>
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            isActive ? 'menu-link menu-link--active' : 'menu-link'
+          }
+        >
+          Hem
+        </NavLink>
       </li>
       <li>
-        <Link to="/projects">Projekt</Link>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            isActive ? 'menu-link menu-link--active' : 'menu-link'
+          }
+        >
+          Projekt
+        </NavLink>
       </li>
       <li>
-        <Link to="/about">Om mig</Link>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? 'menu-link menu-link--active' : 'menu-link'
+          }
+        >
+          Om mig
+        </NavLink>
       </li>
       <li>
-        <Link to="/contact">Kontakt</Link>
+        <a
+          href="/cv-angelie-angman.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CV
+        </a>
+      </li>
+      <li>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? 'menu-link menu-link--active' : 'menu-link'
+          }
+        >
+          Kontakt
+        </NavLink>
       </li>
     </ul>
   )
