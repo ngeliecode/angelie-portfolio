@@ -2,12 +2,15 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <section id="home" className="hero">
-      <div className="hero-content">
-        <h1>Välkommen, webbresenär..</h1>
-        <p className="hero-text">
-          Jag heter Angelie Ångman och jag studerar till frontendutvecklare.
-          Varsågod att utforska min portfolio!
+    <section id="home">
+      <div className="content">
+        <h1>
+          Hej, jag heter
+          <br /> Angelie.
+        </h1>
+        <p>
+          Jag studerar till frontendutvecklare. Varsågod att utforska min
+          portfolio!
         </p>
       </div>
     </section>

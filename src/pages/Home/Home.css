@@ -1,25 +1,28 @@
-.hero {
+#home {
   min-height: calc(100dvh - var(--navbar-height));
-
   display: flex;
   flex-direction: column;
-
-  animation: fadeInUp 0.8s ease-out both;
 }
 
-.hero h1 {
-  font-size: clamp(2rem, 13vw, 3rem);
-  line-height: normal;
-  margin-bottom: clamp(0.5rem, 5vw, 0.7rem);
-}
-
-.hero-content {
+#home .content {
   min-width: 290px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.hero-text {
+#home h1 {
+  font-size: clamp(2rem, 13vw, 3rem);
+  line-height: normal;
+  margin-bottom: clamp(0.5rem, 5vw, 0.7rem);
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+#home h1,
+#home p {
+  text-align: center;
+}
+
+/* .hero-text {
   font-size: clamp(1.1rem, 3vw, 1.3rem);
   line-height: 1.5;
 }
@@ -31,7 +34,7 @@
   width: 100%;
   margin-top: auto;
   padding-bottom: 2rem;
-}
+} */
 
 @media (min-width: 550px) {
   .hero {
