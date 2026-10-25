@@ -104,7 +104,8 @@ body:has(.mobile-menu.open) {
   font-size: 0.8rem;
 }
 
-.button-secondary.active,
+.mobile-menu .button-secondary.active,
+.desktop-menu .button-secondary.active,
 .button-secondary:hover {
   text-decoration: underline;
   text-decoration-color: currentColor;
