@@ -1,7 +1,4 @@
-// React
 import { useState, useEffect } from 'react'
-
-// Components
 import Navbar from './components/Navbar/Navbar'
 import Main from './components/Main/Main'
 

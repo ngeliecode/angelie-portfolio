@@ -67,6 +67,10 @@ body {
   font-family: var(--font-mono);
 }
 
+body:has(.mobile-menu.open) {
+  overflow: hidden;
+}
+
 /* .button {
   font-family: var(--font-mono);
   font-size: 0.9rem;

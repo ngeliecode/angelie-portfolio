@@ -23,15 +23,6 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuProps) => {
     return () => mediaQuery.removeEventListener('change', closeMenu)
   }, [setIsMenuOpen])
 
-  // No scroll when mobile menu open
-  useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : ''
-
-    return () => {
-      document.body.style.overflow = ''
-    }
-  }, [isMenuOpen])
-
   return (
     <div
       className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}
