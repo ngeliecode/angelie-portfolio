@@ -8,7 +8,7 @@
 }
 
 .hero h1 {
-  font-size: clamp(2.7rem, 13vw, 4.5rem);
+  font-size: clamp(2rem, 13vw, 3rem);
   line-height: normal;
   margin-bottom: clamp(0.5rem, 5vw, 0.7rem);
 }
