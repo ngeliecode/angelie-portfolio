@@ -10,19 +10,11 @@
 
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/assets/fonts/poppins-v24-latin-regular.woff2')
+  src: url('../src/assets/fonts/roboto-mono-v31-latin-regular.woff2')
     format('woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../src/assets/fonts/poppins-v24-latin-800.woff2') format('woff2');
 }
 
 :root {
@@ -44,7 +36,7 @@
 
   --font-serif: 'Fraunces', serif;
   --font-sans: 'Montserrat', system-ui, sans-serif;
-  --font-mono: monospace;
+  --font-mono: 'Roboto Mono', monospace;
 
   --navbar-height: 66px;
 }
@@ -72,7 +64,7 @@ html {
 body {
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
 }
 
 /* .button {
