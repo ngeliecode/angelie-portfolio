@@ -2,19 +2,13 @@ import './About.css'
 
 const About = () => {
   return (
-    <section id="about">
-      <h2>Om mig</h2>
-      <div className="about-content">
-        <img
-          className="about-image"
-          src="./images/portrait.png"
-          alt="Porträtt av Angelie Ångman"
-        />
-        <div className="about-text">
+    <section id="about" className="about">
+      <div className="content">
+        <h1>Om mig</h1>
+        <div className="content-text">
           <p>
             Hejsan! Jag heter Angelie Ångman. Jag studerar till Frontend
-            Developer vid Medieinstitutet. Jag bor i 📍 Skellefteå,
-            Västerbotten.
+            Developer vid Medieinstitutet. Jag bor i Skellefteå, Västerbotten.
           </p>
           <p>
             Jag är intresserad av estetik och visuellt uttryck och trivs med
@@ -33,17 +27,16 @@ const About = () => {
           </p>
           <p>
             <a
-              className="resume-link"
+              className="button button-primary resume-link"
               href="/cv-angelie-angman.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Mer om mig hittar du i mitt CV – ja, det har jag också kodat
-              själv!
-              <span>😉</span>
+              Läs mer om mig i mitt CV.
             </a>
           </p>
         </div>
+        <img src="./images/portrait.png" alt="Porträtt av Angelie Ångman" />
       </div>
     </section>
   )

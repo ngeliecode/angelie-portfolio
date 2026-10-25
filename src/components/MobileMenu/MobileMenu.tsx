@@ -1,7 +1,6 @@
 import './MobileMenu.css'
 import { useEffect } from 'react'
 import NavLinks from '../NavLinks/NavLinks'
-import SocialLinks from '../SocialLinks/SocialLinks'
 
 type MobileMenuProps = {
   isMenuOpen: boolean
@@ -33,10 +32,6 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuProps) => {
       }}
     >
       <NavLinks />
-      <footer>
-        <p>♥ 2026 ANGELIE ÅNGMAN</p>
-        <SocialLinks />
-      </footer>
     </div>
   )
 }

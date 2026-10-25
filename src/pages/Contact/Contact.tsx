@@ -3,15 +3,18 @@ import './Contact.css'
 
 const Contact = () => {
   return (
-    <section id="contact">
-      <div className="contact-content">
-        <h2>Ska vi höras?</h2>
+    <section id="contact" className="contact">
+      <div className="content">
+        <h1>Kontakt</h1>
         <p>
           Jag är alltid öppen för nya kontakter, spännande idéer och möjligheter
           att utvecklas inom frontendutveckling.
         </p>
         <p>Skriv till mig!</p>
-        <a href="mailto:angelie.angman@gmail.com" className="contact-email">
+        <a
+          href="mailto:angelie.angman@gmail.com"
+          className="button button-primary"
+        >
           angelie.angman@gmail.com
         </a>
         <SocialLinks />

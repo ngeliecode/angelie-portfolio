@@ -1,13 +1,8 @@
-#contact {
-  height: calc(100vh - var(--navbar-height));
-  margin-top: calc(-1 * var(--navbar-height));
-  padding-top: calc(1 * var(--navbar-height));
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
+.contact .content {
+  max-width: 500px;
+  margin: 5rem auto;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
 }
 
 #contact h2 {
@@ -16,13 +11,11 @@
 
 #contact p {
   margin-bottom: 1rem;
-  font-size: 1rem;
 }
 
 .contact-email {
   text-decoration: underline;
   text-underline-offset: 4px;
-  font-size: 1rem;
 }
 
 .contact-email:hover {
@@ -30,6 +23,5 @@
 }
 
 #contact .social-links {
-  text-align: center;
   margin-top: 2rem;
 }

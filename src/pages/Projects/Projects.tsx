@@ -18,47 +18,54 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <h2>Projekt</h2>
-
-      <div className="project-filters">
-        <button
-          type="button"
-          onClick={() => setSelectedTech('Alla')}
-          className={selectedTech === 'Alla' ? 'active' : ''}
-        >
-          Alla
-        </button>
-
-        {technologies.map((technology) => (
+      <div className="content">
+        <h1>Projekt</h1>
+        <div className="project-filters">
           <button
-            key={technology}
             type="button"
-            onClick={() => setSelectedTech(technology)}
-            className={selectedTech === technology ? 'active' : ''}
+            onClick={() => setSelectedTech('Alla')}
+            className={
+              selectedTech === 'Alla'
+                ? 'button button-secondary active'
+                : 'button button-secondary'
+            }
           >
-            {technology}
+            Alla
           </button>
-        ))}
-      </div>
 
-      <div className="projects-content">
-        <div className="projects-list">
-          {filteredProjects.map((project) => (
-            <article key={project.id} className="project-card">
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Besök ${project.title}`}
-              >
-                <img src={project.image} alt={project.title} />
-              </a>
+          {technologies.map((technology) => (
+            <button
+              key={technology}
+              type="button"
+              onClick={() => setSelectedTech(technology)}
+              className={
+                selectedTech === technology
+                  ? 'button button-secondary active'
+                  : 'button button-secondary'
+              }
+            >
+              {technology}
+            </button>
+          ))}
+        </div>
+        <div className="projects-content">
+          <div className="projects-list">
+            {filteredProjects.map((project) => (
+              <article key={project.id} className="project-card">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Besök ${project.title}`}
+                >
+                  <img src={project.image} alt={project.title} />
+                </a>
 
-              <h3>{project.title}</h3>
+                <h2>{project.title}</h2>
 
-              <p>{project.description}</p>
+                <p>{project.description}</p>
 
-              {/* {project.githubUrl && (
+                {/* {project.githubUrl && (
                 <a
                   href={project.githubUrl}
                   target="_blank"
@@ -68,15 +75,16 @@ const Projects = () => {
                 </a>
               )} */}
 
-              <div className="project-technologies">
-                {project.technologies.map((technology) => (
-                  <span key={technology} className="technology-tag">
-                    {technology}
-                  </span>
-                ))}
-              </div>
-            </article>
-          ))}
+                <div className="project-technologies">
+                  {project.technologies.map((technology) => (
+                    <span key={technology} className="technology-tag">
+                      {technology}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

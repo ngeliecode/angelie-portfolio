@@ -8,7 +8,9 @@ const NavLinks = () => {
           to="/"
           end
           className={({ isActive }) =>
-            isActive ? 'menu-link menu-link--active' : 'menu-link'
+            isActive
+              ? 'button button-secondary nav-link active'
+              : 'button button-secondary nav-link'
           }
         >
           Hem
@@ -18,7 +20,9 @@ const NavLinks = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? 'menu-link menu-link--active' : 'menu-link'
+            isActive
+              ? 'button button-secondary nav-link active'
+              : 'button button-secondary nav-link'
           }
         >
           Projekt
@@ -28,7 +32,9 @@ const NavLinks = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? 'menu-link menu-link--active' : 'menu-link'
+            isActive
+              ? 'button button-secondary nav-link active'
+              : 'button button-secondary nav-link'
           }
         >
           Om mig
@@ -39,6 +45,7 @@ const NavLinks = () => {
           href="/cv-angelie-angman.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          className="button button-secondary nav-link"
         >
           CV
         </a>
@@ -47,7 +54,9 @@ const NavLinks = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? 'menu-link menu-link--active' : 'menu-link'
+            isActive
+              ? 'button button-secondary nav-link active'
+              : 'button button-secondary nav-link'
           }
         >
           Kontakt
