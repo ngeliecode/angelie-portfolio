@@ -104,13 +104,20 @@ body:has(.mobile-menu.open) {
   font-size: 0.8rem;
 }
 
-.mobile-menu .button-secondary.active,
-.desktop-menu .button-secondary.active,
-.button-secondary:hover {
+.button-secondary.active {
   text-decoration: underline;
   text-decoration-color: currentColor;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.25em;
+}
+
+@media (hover: hover) {
+  .button-secondary:hover {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
+  }
 }
 
 h1,
