@@ -15,6 +15,18 @@
   background: var(--color-background);
 }
 
+@media (min-width: 768px) {
+  .navbar {
+    padding-inline: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding-inline: 8rem;
+  }
+}
+
 .theme-toggle,
 .menu-toggle {
   display: inline-flex;
