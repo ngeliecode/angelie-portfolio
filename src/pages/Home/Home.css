@@ -36,10 +36,6 @@
   margin-block: 1.5rem;
 }
 
-.home footer {
-  padding-inline: 1rem;
-}
-
 @media (min-width: 768px) {
   .home footer {
     padding-inline: 3rem;
