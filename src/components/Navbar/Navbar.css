@@ -47,7 +47,6 @@
 .desktop-menu ul {
   display: flex;
   gap: 2rem;
-  margin-inline: 1.5rem;
 }
 
 .desktop-menu li {
