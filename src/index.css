@@ -18,8 +18,8 @@
 }
 
 :root {
-  --color-background: #fff;
-  --color-foreground: #000;
+  --color-background: #ffffff;
+  --color-foreground: #111111;
 
   --font-sans: 'Montserrat', system-ui, sans-serif;
   --font-mono: 'Roboto Mono', monospace;
@@ -27,7 +27,7 @@
 
 .dark {
   --color-background: #151515;
-  --color-foreground: #fff;
+  --color-foreground: #f3f3f3;
 }
 
 html {
