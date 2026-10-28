@@ -15,16 +15,6 @@ https://angelie-portfolio-ten.vercel.app/
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-## Design
-
-[Figma-design](https://www.figma.com/design/JLJuCKBotQb2e9XHV54s2K/Portfolio---design?node-id=0-1&t=kfbJYxX3QwLQubNX-1)
-
-My design evolved throughout the process. I initially explored a more elaborate and energetic visual style, but over time, I felt it was too busy and no longer reflected the aesthetic I wanted for my portfolio. I decided to take a more minimalist approach instead.
-
-Although the current design is minimal, I still want it to feel distinctive and design-driven. With fewer elements, every detail becomes more important, and I want to give each one careful consideration. Frith Studio has been a major source of inspiration for the visual direction.
-
-The design is still a work in progress, and I intend to keep refining it until every detail feels just right. I also have ideas for an animation that is already represented in the Figma design, although I haven't implemented it yet. I'm still exploring exactly how I want it to work.
-
 ## Running the Project Locally
 
 1. Clone the repository:
@@ -46,3 +36,23 @@ The design is still a work in progress, and I intend to keep refining it until e
    ```
 
 4. Open the local URL displayed in the terminal, usually `http://localhost:5173`.
+
+## Navigation and Links
+
+React Router is used for internal navigation between pages.
+
+- **`NavLink`** is used for internal navigation links that need active styling to indicate the current page.
+- **`Link`** is used for internal navigation when active styling is not needed.
+- **`a`** is used for external websites and static resources, such as the Resume PDF.
+
+This keeps navigation consistent and makes it clear which type of link to use in different situations.
+
+## Design
+
+[Figma-design](https://www.figma.com/design/JLJuCKBotQb2e9XHV54s2K/Portfolio---design?node-id=0-1&t=kfbJYxX3QwLQubNX-1)
+
+My design evolved throughout the process. I initially explored a more elaborate and energetic visual style, but over time, I felt it was too busy and no longer reflected the aesthetic I wanted for my portfolio. I decided to take a more minimalist approach instead.
+
+Although the current design is minimal, I still want it to feel distinctive and design-driven. With fewer elements, every detail becomes more important, and I want to give each one careful consideration. Frith Studio has been a major source of inspiration for the visual direction.
+
+The design is still a work in progress, and I intend to keep refining it until every detail feels just right. I also have ideas for an animation that is already represented in the Figma design, although I haven't implemented it yet. I'm still exploring exactly how I want it to work.
