@@ -4,7 +4,7 @@ const NavLinks = () => {
   return (
     <ul>
       <li>
-        <NavLink to="/" end className="button button-secondary nav-link">
+        <NavLink to="/" className="button button-secondary nav-link">
           Hem
         </NavLink>
       </li>
