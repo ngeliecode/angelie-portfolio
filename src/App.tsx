@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Navbar from './components/Navbar/Navbar'
+import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <>
-      <Navbar theme={theme} setTheme={setTheme} />
+      <Header theme={theme} setTheme={setTheme} />
       <Main />
     </>
   )
