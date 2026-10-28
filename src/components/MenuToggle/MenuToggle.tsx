@@ -6,7 +6,7 @@ type MenuToggleProps = {
 const MenuToggle = ({ isMenuOpen, setIsMenuOpen }: MenuToggleProps) => {
   return (
     <button
-      className="menu-toggle button button-secondary button--menu-toggle"
+      className="menu-toggle button button-secondary"
       onClick={() => setIsMenuOpen(!isMenuOpen)}
       aria-expanded={isMenuOpen}
       aria-label={isMenuOpen ? 'Stäng meny' : 'Öppna meny'}

@@ -1,38 +1,18 @@
 .mobile-menu {
+  display: none;
+
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%; /* Helskärm */
+  inset: 0;
   z-index: 1;
   padding: 1rem;
   background: var(--color-overlay-background);
   color: var(--color-overlay-foreground);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  transform: translateX(100%); /* utanför skärmen, till höger */
-  visibility: hidden; /* gömd för tangentbord och skärmläsare */
-  transition:
-    transform 0.3s ease,
-    visibility 0s linear 0.3s; /* gömmer först när animationen är klar */
-}
-
-/* Desktop: ingen mobilmeny alls */
-@media (min-width: 1024px) {
-  .mobile-menu {
-    display: none;
-  }
 }
 
 .mobile-menu.open {
-  transform: translateX(0);
-  visibility: visible;
-  transition:
-    transform 0.3s ease,
-    visibility 0s; /* visas direkt vid öppning */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .menu-toggle {
@@ -41,10 +21,8 @@
 }
 
 .mobile-menu ul {
-  text-align: center;
-}
-
-.mobile-menu li {
-  margin-bottom: 2rem;
-  padding-block: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
 }
