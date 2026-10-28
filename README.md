@@ -39,7 +39,7 @@ https://angelie-portfolio-ten.vercel.app/
 
 ## Navigation and Links
 
-React Router is used for internal navigation between pages.
+React Router is used for internal navigation between pages to avoid full page reloads.
 
 - **`NavLink`** is used for internal navigation links that need active styling to indicate the current page.
 - **`Link`** is used for internal navigation when active styling is not needed.
