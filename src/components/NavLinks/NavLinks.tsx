@@ -4,39 +4,17 @@ const NavLinks = () => {
   return (
     <ul>
       <li>
-        <NavLink
-          to="/"
-          end
-          className={({ isActive }) =>
-            isActive
-              ? 'button button-secondary nav-link active'
-              : 'button button-secondary nav-link'
-          }
-        >
+        <NavLink to="/" end className="button button-secondary nav-link">
           Hem
         </NavLink>
       </li>
       <li>
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            isActive
-              ? 'button button-secondary nav-link active'
-              : 'button button-secondary nav-link'
-          }
-        >
+        <NavLink to="/projects" className="button button-secondary nav-link">
           Projekt
         </NavLink>
       </li>
       <li>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive
-              ? 'button button-secondary nav-link active'
-              : 'button button-secondary nav-link'
-          }
-        >
+        <NavLink to="/about" className="button button-secondary nav-link">
           Om mig
         </NavLink>
       </li>
@@ -51,14 +29,7 @@ const NavLinks = () => {
         </a>
       </li>
       <li>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive
-              ? 'button button-secondary nav-link active'
-              : 'button button-secondary nav-link'
-          }
-        >
+        <NavLink to="/contact" className="button button-secondary nav-link">
           Kontakt
         </NavLink>
       </li>
