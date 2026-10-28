@@ -19,16 +19,7 @@
 
 :root {
   --color-background: #fff;
-  --color-foreground: #000000;
-  --color-text: #222;
-  --color-overlay-background: #ffffff;
-  --color-overlay-foreground: #000000;
-
-  --color-button-primary-bg: #111;
-  --color-button-primary-text: #ffffff;
-  --color-button-secondary-bg: transparent;
-  --color-button-secondary-text: #111;
-  --color-button-secondary-border: #111;
+  --color-foreground: #000;
 
   --font-serif: 'Fraunces', serif;
   --font-sans: 'Montserrat', system-ui, sans-serif;
@@ -36,21 +27,8 @@
 }
 
 .dark {
-  --color-background: #222;
-  --color-foreground: #f3f3f3;
-  --color-overlay-background: #333;
-  --color-overlay-foreground: #ffffff;
-  --color-text: #f5f5f5;
-  --color-accent-bg: #c5c5c5;
-  --color-accent-text: #050505;
-  --color-link-text: #acacac;
-  --color-border: #acacac;
-
-  --color-button-primary-bg: #ffffff;
-  --color-button-primary-text: #000;
-  --color-button-secondary-bg: transparent;
-  --color-button-secondary-text: #ffffff;
-  --color-button-secondary-border: #ffffff;
+  --color-background: #151515;
+  --color-foreground: #fff;
 }
 
 html {
@@ -59,7 +37,7 @@ html {
 
 body {
   background-color: var(--color-background);
-  color: var(--color-text);
+  color: var(--color-foreground);
   font-family: var(--font-mono);
   padding-inline: clamp(1rem, 8vw - 1rem, 8rem);
 }
