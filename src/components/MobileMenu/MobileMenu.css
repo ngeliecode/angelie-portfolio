@@ -4,7 +4,7 @@
   right: 0;
   bottom: 0;
   width: 100%; /* Helskärm */
-  z-index: 100;
+  z-index: 1;
   padding: 1rem;
   background: var(--color-overlay-background);
   color: var(--color-overlay-foreground);
@@ -36,7 +36,8 @@
 }
 
 .menu-toggle {
-  z-index: 102;
+  position: relative;
+  z-index: 2;
 }
 
 .mobile-menu ul {

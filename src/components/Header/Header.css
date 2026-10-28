@@ -1,9 +1,9 @@
 /* Layout for mobile, tablet, desktop */
-.navbar {
+header {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 200;
+  z-index: 100;
 
   display: flex;
   justify-content: space-between;
@@ -16,13 +16,13 @@
 }
 
 @media (min-width: 768px) {
-  .navbar {
+  header {
     padding-inline: 3rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .navbar {
+  header {
     padding-inline: 8rem;
   }
 }

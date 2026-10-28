@@ -15,9 +15,9 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
 
   return (
     <header>
-      <nav className="navbar">
-        <ThemeToggle theme={theme} setTheme={setTheme} />
+      <ThemeToggle theme={theme} setTheme={setTheme} />
 
+      <nav className="navbar">
         <div className="desktop-menu">
           <NavLinks />
         </div>
