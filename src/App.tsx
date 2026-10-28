@@ -14,6 +14,9 @@ const App = () => {
     <>
       <Header theme={theme} setTheme={setTheme} />
       <Main />
+      <footer>
+        <p>♥ 2026 ANGELIE ÅNGMAN</p>
+      </footer>
     </>
   )
 }

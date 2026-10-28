@@ -1,5 +1,4 @@
 .home {
-  min-height: calc(100dvh - var(--navbar-height));
   display: flex;
   flex-direction: column;
 }
@@ -29,21 +28,25 @@
   font-size: 15px;
 }
 
-.home footer p {
+footer p {
   font-size: 10px;
   max-width: none;
   text-align: end;
   margin-block: 1.5rem;
 }
 
+footer {
+  padding-inline: 1rem;
+}
+
 @media (min-width: 768px) {
-  .home footer {
+  footer {
     padding-inline: 3rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .home footer {
+  footer {
     padding-inline: 8rem;
   }
 }

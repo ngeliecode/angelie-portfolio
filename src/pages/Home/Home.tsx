@@ -17,9 +17,6 @@ const Home = () => {
           Se utvalda projekt
         </Link>
       </div>
-      <footer>
-        <p>♥ 2026 ANGELIE ÅNGMAN</p>
-      </footer>
     </section>
   )
 }

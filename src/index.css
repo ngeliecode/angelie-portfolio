@@ -59,6 +59,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-text);
@@ -67,6 +73,14 @@ body {
 
 body:has(.mobile-menu.open) {
   overflow: hidden;
+}
+
+main {
+  flex: 1; /* tar all ledig plats, trycker ner footern */
+}
+
+footer {
+  margin-top: auto; /* extra säkerhet */
 }
 
 .button {
