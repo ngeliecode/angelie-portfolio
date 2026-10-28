@@ -65,6 +65,10 @@ html {
   flex-direction: column;
 }
 
+main {
+  flex: 1; /* tar all ledig plats, trycker ner footern */
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-text);
@@ -73,14 +77,6 @@ body {
 
 body:has(.mobile-menu.open) {
   overflow: hidden;
-}
-
-main {
-  flex: 1; /* tar all ledig plats, trycker ner footern */
-}
-
-footer {
-  margin-top: auto; /* extra säkerhet */
 }
 
 .button {
