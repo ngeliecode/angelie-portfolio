@@ -1,4 +1,5 @@
 import './Home.css'
+import { Link } from 'react-router'
 
 const Home = () => {
   console.log(document.documentElement.scrollHeight - innerHeight)
@@ -13,9 +14,9 @@ const Home = () => {
           Jag studerar till frontendutvecklare. Varsågod att utforska min
           portfolio!
         </p>
-        <a href="/projects" className="button button-primary">
+        <Link to="/projects" className="button button-primary">
           Se utvalda projekt
-        </a>
+        </Link>
       </div>
       <footer>
         <p>♥ 2026 ANGELIE ÅNGMAN</p>
