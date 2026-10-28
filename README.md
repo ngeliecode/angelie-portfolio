@@ -1,14 +1,14 @@
 # Angelie's Portfolio
 
-Detta är min personliga portfolio, byggd som en del av kursen JavaScript Ramverk på Medieinstitutet. Syftet är att presentera mig själv, visa upp mina projekt och samla mina kontaktuppgifter på ett ställe.
+This is my personal portfolio, built as part of the JavaScript Frameworks course at Medieinstitutet. Its purpose is to introduce myself, showcase my projects, and bring my contact information together in one place.
 
-Portfolion är byggd med React och TypeScript via Vite, och är stylad med vanlig CSS.
+The portfolio is built with React and TypeScript using Vite, and styled with plain CSS.
 
-## Live sida
+## Live Site
 
 https://angelie-portfolio-ten.vercel.app/
 
-## Tech stack
+## Tech Stack
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -19,29 +19,30 @@ https://angelie-portfolio-ten.vercel.app/
 
 [Figma-design](https://www.figma.com/design/JLJuCKBotQb2e9XHV54s2K/Portfolio---design?node-id=0-1&t=kfbJYxX3QwLQubNX-1)
 
-Jag gjorde om min design många gånger under arbetets gång. Det började med en ganska avancerad design, men efter hand blev den enklare. Mina ambitioner var större än vad jag kunde genomföra just nu, och vissa idéer som verkade bra i huvudet fungerade inte lika bra när jag väl började bygga dem.
+My design evolved throughout the process. I initially explored a more elaborate and energetic visual style, but over time, I felt it was too busy and no longer reflected the aesthetic I wanted for my portfolio. I decided to take a more minimalist approach instead.
 
-Designen jag har valt att visa upp är därför enklare. En illustration som jag gjorde tidigt i processen fick däremot vara kvar. Den föreställer en dator som skulle rama in projektbilderna och få dem att passa in i skärmen. Tyvärr upptäckte jag nära inpå deadline att illustrationen inte skalade som jag hade tänkt mig. Därför fick jag bygga om projektsidan och ersätta den ursprungliga lösningen med en enklare grid-layout.
+Although the current design is minimal, I still want it to feel distinctive and design-driven. With fewer elements, every detail becomes more important, and I want to give each one careful consideration. Frith Studio has been a major source of inspiration for the visual direction.
 
-## Köra repot lokalt
+The design is still a work in progress, and I intend to keep refining it until every detail feels just right. I also have ideas for an animation that is already represented in the Figma design, although I haven't implemented it yet. I'm still exploring exactly how I want it to work.
 
-1. Klona repot:
+## Running the Project Locally
+
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/ngeliecode/angelie-portfolio.git
    ```
 
-2. Installera projektets beroenden:
+2. Install the project dependencies:
 
    ```bash
    npm install
    ```
 
-3. Starta utvecklingsservern:
+3. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-4. Öppna den lokala adressen som visas i terminalen, vanligtvis `http://localhost:5173`.
-
+4. Open the local URL displayed in the terminal, usually `http://localhost:5173`.
