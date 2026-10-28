@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
@@ -14,9 +15,7 @@ const App = () => {
     <>
       <Header theme={theme} setTheme={setTheme} />
       <Main />
-      <footer>
-        <p>♥ 2026 ANGELIE ÅNGMAN</p>
-      </footer>
+      <Footer />
     </>
   )
 }

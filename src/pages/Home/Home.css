@@ -28,29 +28,6 @@
   font-size: 15px;
 }
 
-footer p {
-  font-size: 10px;
-  max-width: none;
-  text-align: end;
-  margin-block: 1.5rem;
-}
-
-footer {
-  padding-inline: 1rem;
-}
-
-@media (min-width: 768px) {
-  footer {
-    padding-inline: 3rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  footer {
-    padding-inline: 8rem;
-  }
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
