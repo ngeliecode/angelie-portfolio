@@ -2,7 +2,6 @@ import './Home.css'
 import { Link } from 'react-router'
 
 const Home = () => {
-  console.log(document.documentElement.scrollHeight - innerHeight)
   return (
     <section id="home" className="home">
       <div className="content">
