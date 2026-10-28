@@ -2,7 +2,7 @@ import './Header.css'
 import { useState } from 'react'
 import ThemeToggle from '../ThemeToggle/ThemeToggle'
 import MenuToggle from '../MenuToggle/MenuToggle'
-import NavLinks from '../NavLinks/NavLinks'
+import Nav from '../Nav/Nav'
 import MobileMenu from '../MobileMenu/MobileMenu'
 
 type HeaderProps = {
@@ -19,7 +19,7 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
 
       <nav className="navbar">
         <div className="desktop-menu">
-          <NavLinks />
+          <Nav />
         </div>
 
         <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />

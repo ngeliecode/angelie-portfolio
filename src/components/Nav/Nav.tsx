@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router'
 
-const NavLinks = () => {
+const Nav = () => {
   return (
     <ul>
       <li>
@@ -37,4 +37,4 @@ const NavLinks = () => {
   )
 }
 
-export default NavLinks
+export default Nav

@@ -1,6 +1,6 @@
 import './MobileMenu.css'
 import { useEffect } from 'react'
-import NavLinks from '../NavLinks/NavLinks'
+import Nav from '../Nav/Nav'
 
 type MobileMenuProps = {
   isMenuOpen: boolean
@@ -31,7 +31,7 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: MobileMenuProps) => {
         }
       }}
     >
-      <NavLinks />
+      <Nav />
     </div>
   )
 }
