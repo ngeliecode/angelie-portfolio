@@ -61,26 +61,11 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-mono);
+  padding-inline: clamp(1rem, 8vw - 1rem, 8rem);
 }
 
 body:has(.mobile-menu.open) {
   overflow: hidden;
-}
-
-body {
-  padding-inline: 1rem;
-}
-
-@media (min-width: 768px) {
-  body {
-    padding-inline: 3rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    padding-inline: 8rem;
-  }
 }
 
 #root {
