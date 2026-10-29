@@ -50,6 +50,16 @@ React Router is used for internal navigation between pages to avoid full page re
 
 This keeps navigation consistent and makes it clear which type of link to use in different situations.
 
+## Routing
+
+This portfolio uses **React Router in Declarative mode**, with `<BrowserRouter>` as the router.
+
+### Why Declarative mode?
+
+Declarative mode enables basic routing features like matching URLs to components, navigating around the app and providing active states. The portfolio doesn't currently use the extra features of the other modes, such as `loader` or `action`.
+
+https://reactrouter.com/start/modes
+
 ## Design
 
 [Figma-design](https://www.figma.com/design/JLJuCKBotQb2e9XHV54s2K/Portfolio---design?node-id=0-1&t=kfbJYxX3QwLQubNX-1)
